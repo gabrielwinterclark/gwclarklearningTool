@@ -17,12 +17,12 @@ let myFlashcards = [ {
 
 // Make the database point to the location root -> deck -> flashcards
 // If the location doesn't exist is will be created
-firebase.database().ref('deck/flashcards'); 
+let dbLocation = firebase.database().ref('deck/flashcards'); 
  
 // myFlashcards will be stored under flashcards in the database
 // Anything that was in this location will be overwritten
 // Thus, a write operation also does an update
-firebase.database().set(myFlashcards);
+dbLocation.set(myFlashcards);
 
 // As before,make the database point to the location where the data exists
 // If the location doesn't exist it will be created but there will be nothing to retirieve
