@@ -39,3 +39,6 @@ dbLocation.set(myFlashcards);
 	});
 	// Print the data out as a JSON string or otherwise manipulate it
 	console.log (' JSON string:' + jsonString )
+
+// Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
