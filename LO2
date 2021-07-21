@@ -6,46 +6,43 @@
   </head>
   <body>
     <h1>A Very Tiny Crash Course in Intrinsic Value</h1>
-    <h2>Learning Objective 1: Understand intrinsic vs. instrumental value</h2>
+    <h2>Learning Objective 2: Understand intrinsic vs. extrinsic value</h2>
     <h3>Skills:
-    <ol> <li> Skill 1: Identify when someone is assigning intrinsic value to something (first definition) </li>
-    <li> Skill 2: Identify when someone is assigning instrumental value to something </li>
+    <ol> <li> Skill 1: Identify when someone is assigning intrinsic value to something (second definition) </li>
+    <li> Skill 2: Identify when someone is assigning extrinsic value to something </li>
     <br>
-    <p> In philosophy, there are actually two definitions of intrinsic value. 
-    Each definition has a corresponding “opposite” sort of value. 
-    In this learning objective, we will learn about the first definition of intrinsic value 
-    and how it contrasts with its “opposite”: instrumental value. 
-    We will learn about the second definition in the next learning objective. </p>
+    <p> In the last learning objective, we learned about the first definition of intrinsic value. 
+    Now, we will move on to the second definition of intrinsic value, 
+    and its corresponding “opposite”: extrinsic value. </p>
     <br>
-    <p> <b> Skill 1: Identify when someone is assigning intrinsic value to something (first definition) <b> </p>
-    <p> By the first definition, something has intrinsic value when it is valuable as an end. 
-    What does “valuable as an end” mean? 
-    Well, something is valuable as an end when it’s valuable for itself, not in service of something else. </p>
+    <p> <b> Skill 1: Identify when someone is assigning intrinsic value to something (second definition) <b> </p>
+    <p> By the second definition, a thing has intrinsic value when its value arises from nonrelational properties, or properties that are separate from that thing.</p>
     <br> 
-    <p> Let's see if an example can help us understand even better. </p>
+    <p> For example, I think the painting <i>Starry Night</i> by Vincent Van Gogh is valuable 
+    because of its colors and shapes. I don’t value it because it was painted by a famous artist, 
+    or because it makes me feel something. I value the painting for its <i>nonrelational properties</i>. 
+    The colors and shapes are <i>inseparable</i> from the painting. So, I value it <i>intrinsically</i> by this second 
+    definition. </p>
     <br> 
-    <p> Example: I love sushi because it’s delicious, not because it gets or does anything for me. 
-    The sushi doesn’t grow legs, buy a car and start running all my errands for me. 
-    No, I love sushi just because I enjoy eating it. I value sushi <i>intrinsically</i>. 
-    For me, the sushi has <i>intrinsic value</i>. </p>
+    <p><img src="images/starrynight.png" alt="A picture of the Starry Night painting by Vincent Van Gogh"></p>
+    <p> Imagine the painting in a vacuum. No, not that kind of vacuum! I’m talking about a sort of void, consisting of nothing else but the painting. One way to test if something has intrinsic value by this second definition is to imagine it in a vacuum. Does the painting have value all by itself in the vacuum? If so, that value probably comes from its nonrelational properties - those things that can’t be separated from it. And, if this is true, that thing has intrinsic value. </p>
     <br> 
-    <p> Try thinking of something that you find intrinsically valuable. 
-    What do you find interesting, enjoyable, or important on its own? </p>
-    </br>
-    <p> Learn by Doing Exercise Will Go Here </p>
+    <p> Learn by Doing Activity Will Go Here</p>
     <br>
-    <p> <b> Skill 2: Identify when someone is assigning instrumental value to something </b> </p>
+    <p> <b> Skill 2: Identify when someone is assigning extrinsic value to something </b> </p>
     <br>
-    <p> By the first definition, something has intrinsic value when it’s valued <i>as an end, for itself</i>. 
-    In contrast, something has <i>instrumental</i> value when it’s valued because <i>as a means</i> to get something else. 
-    In the previous Learn By Doing exercise, you heard about May, who values playing the cello instrumentally. 
-    She values playing the cello because it pays her bills: for May, 
-    playing the cello is a <i>means</i> to get money. </p>
+    <p> In the last Learn by Doing activity, we saw that Micah values <i>Ratatouille</i>
+    because it makes them and their friend laugh. The fact that <i>Ratatouille</i> makes Micah 
+    laugh is a <i>relational</i> property of the movie: it can be separated from the movie. 
+    And, because this is what makes Micah value the movie, we say that it is <i>extrinsically valuable</i>. 
+    Where valuing something intrinsically by the second definition means its value comes from its 
+    <i>nonrelational (inseparable)</i> properties, valuing something extrinsically means its value comes 
+    from its <i>relational (separable)</i> properties.</p>
     <br>
     <p> Learn by Doing Exercise Will Go Here </p>
 
-  <p> <a href="https://gabrielwinterclark.github.io/learningTool/home">Click here</a> to return to the home page! </p>
-  <p> <a href="https://gabrielwinterclark.github.io/learningTool/LO2">Click here</a> to proceed to the next learning objective!</p>
+  <p> <a href="https://gabrielwinterclark.github.io/learningTool/LO1">Click here</a> to return to the previous learning objective!</p>
+  <p> <a href="https://gabrielwinterclark.github.io/learningTool/LO3">Click here</a> to proceed to the next learning objective!</p>
     
       <script src="scripts/main.js"></script>
   </body>
