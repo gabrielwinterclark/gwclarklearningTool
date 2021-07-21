@@ -25,7 +25,9 @@
     <p> There are 3 learning objectives involved in this course: 
     <ol> <li> Learning Objective 1: Understand intrinsic vs. instrumental value </li>
     <li> Learning Objective 2: Understand intrinsic vs. extrinsic value </li>
-    <p> Click here to proceed to the first learning objective! Have fun! </p>
+      <li> Learning Objective 3: Learn why these concepts matter </li> </ol> </p>
+      <br>
+  <p> <a href="https://gabrielwinterclark.github.io/learningTool/LO1">Click here</a> to proceed to the first learning objective! Have fun! </p>
     
       <script src="scripts/main.js"></script>
   </body>
