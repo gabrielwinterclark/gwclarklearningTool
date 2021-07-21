@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Intrinsic Value</title>
+  </head>
+  <body>
+    <h1>A Very Tiny Crash Course in Intrinsic Value</h1>
+    <br>
+    <p>Hi there, and welcome to this very tiny crash course on intrinsic value!</p>
+    <br>
+    <p> Please share your first name here:</p>
+    <br>
+    <p> Let me start by asking you a question: why is going through this course important to you? 
+    I can only assume it must have <i>some</i> value for you. After all, you're here! </p?
+    <br>
+    <p> Please share 1-2 sentences about why this course is important to you:</p>
+    <br> 
+    <p> Don't worry, you're not going to be graded on your response. 
+    But, I want you to keep this question in mind as you're going through the course. 
+    Why? Well, because this course is designed to teach you about the philosophical concept of intrinsic value. 
+    By the end, you will have a better understanding of how to answer questions like the one I asked you, 
+    and why we might be interested in asking them in the first place. </p>
+    <br> 
+    <p> There are 3 learning objectives involved in this course: 
+    <ol> <li> Learning Objective 1: Understand intrinsic vs. instrumental value </li>
+    <li> Learning Objective 2: Understand intrinsic vs. extrinsic value </li>
+    <p> Click here to proceed to the first learning objective! Have fun! </p>
+    
+      <script src="scripts/main.js"></script>
+  </body>
+</html>
