@@ -1,9 +1,19 @@
-var peanut = document.getElementById("submitName");
-peanut.addEventListener("click", myFunction);
-var thankyouName = document.getElementById("thankyouName");
+      var submitMotivation = document.getElementById("submitMotivation");
+submitMotivation.addEventListener("click", myFunction);
+
+var thankyouMotivation = document.getElementById("thankyouMotivation");
 
 function myFunction() {
-	thankyouName.textContent = "Is this working?";
+	thankyouMotivation.textContent = "Thank you!";
+}
+
+var submitName = document.getElementById("submitName");
+submitName.addEventListener("click", myFunctionTwo);
+
+var thankyouName = document.getElementById("thankyouName");
+
+function myFunctionTwo() {
+	thankyouName.textContent = "Thank you!";
 }
 
 let myFlashcards = [ {
