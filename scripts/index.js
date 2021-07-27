@@ -42,3 +42,8 @@ dbLocation.set(myFlashcards);
 
 // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+document.getElementById("submitName").addEventListener("click",
+						      function () {
+	document.getElementById("thankyouName").innerHTML = "Thank you!";
+});
