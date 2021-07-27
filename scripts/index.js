@@ -1,3 +1,18 @@
+document.getElementById("submitName").addEventListener("click",
+						      function () {
+	alert("Thank you!");
+});
+
+document.getElementById("submitMotivation").addEventListener("click",
+						      function () {
+	alert("Thank you!");
+});
+
+document.getElementById("testbutton").addEventListener("click",
+						       function () {
+	alert("Thank you!");
+});
+
 let myFlashcards = [ {
     "question": "Name this species of bird.",
     "image" : "images/barn-owl-2550068__340.webp",
@@ -25,7 +40,7 @@ let dbLocation = firebase.database().ref('deck/flashcards');
 dbLocation.set(myFlashcards);
 
 // As before,make the database point to the location where the data exists
-// If the location doesn't exist it will be created but there will be nothing to retirieve
+// If the location doesn't exist it will be created but there will be nothing to retrieve
 
 	let fc = firebase.database().ref('deck/flashy');
 	// A variable to store the JSON results in a human readable format
@@ -42,18 +57,3 @@ dbLocation.set(myFlashcards);
 
 // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-
-document.getElementById("submitName").addEventListener("click",
-						      function () {
-	alert("Thank you!");
-});
-
-document.getElementById("submitMotivation").addEventListener("click",
-						      function () {
-	alert("Thank you!");
-});
-
-document.getElementById("testbutton").addEventListener("click",
-						       function () {
-	alert("Thank you!");
-});
