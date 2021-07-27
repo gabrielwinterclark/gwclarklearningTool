@@ -1,5 +1,5 @@
-var testbutton = document.getElementById("testbutton");
-testbutton.addEventListener("click", myFunction);
+var peanut = document.getElementById("testbutton");
+peanut.addEventListener("click", myFunction);
 var thankyouName = document.getElementById("thankyouName");
 
 function myFunction() {
