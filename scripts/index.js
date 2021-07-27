@@ -16,7 +16,16 @@ function myFunctionTwo() {
 	thankyouName.textContent = "Thank you!";
 }
 
-let myFlashcards = [ {
+class student {
+	constructor (name, motivation) {
+		this.name = name;
+		this.motivation = motivation;
+	}
+};
+
+let results = [];
+
+let  = [ {
     "question": "Name this species of bird.",
     "image" : "images/barn-owl-2550068__340.webp",
     "answer": "Barn Owl"
