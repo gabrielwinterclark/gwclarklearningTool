@@ -45,10 +45,10 @@ dbLocation.set(myFlashcards);
 
 document.getElementById("submitName").addEventListener("click",
 						      function () {
-	document.getElementById("thankyouName").innerHTML = "Thank you!";
+	alert("Thank you!");
 });
 
 document.getElementById("submitMotivation").addEventListener("click",
 						      function () {
-	document.getElementById("thankyouMotivation").innerHTML = "Thank you!";
+	alert("Thank you!");
 });
