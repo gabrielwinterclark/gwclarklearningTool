@@ -1,4 +1,4 @@
-var peanut = document.getElementById("testbutton");
+var peanut = document.getElementById("testtext");
 peanut.addEventListener("click", myFunction);
 var thankyouName = document.getElementById("thankyouName");
 
