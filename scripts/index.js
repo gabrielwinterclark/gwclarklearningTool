@@ -52,3 +52,8 @@ document.getElementById("submitMotivation").addEventListener("click",
 						      function () {
 	alert("Thank you!");
 });
+
+document.getElementById("testbutton").addEventListener("click",
+						       function () {
+	alert("Thank you!");
+});
