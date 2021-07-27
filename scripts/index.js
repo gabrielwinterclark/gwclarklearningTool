@@ -1,17 +1,10 @@
-document.getElementById("submitName").addEventListener("click",
-						      function () {
-	alert("Thank you!");
-});
+var testbutton = document.getElementById("testbutton");
+testbutton.addEventListener("click", myFunction);
+var thankyouName = document.getElementById("thankyouName");
 
-document.getElementById("submitMotivation").addEventListener("click",
-						      function () {
-	alert("Thank you!");
-});
-
-document.getElementById("testbutton").addEventListener("click",
-						       function () {
-	alert("Thank you!");
-});
+function myFunction() {
+	thankyouName.textContent = "Is this working?";
+}
 
 let myFlashcards = [ {
     "question": "Name this species of bird.",
