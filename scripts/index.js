@@ -1,21 +1,3 @@
-      var submitMotivation = document.getElementById("submitMotivation");
-submitMotivation.addEventListener("click", myFunction);
-
-var thankyouMotivation = document.getElementById("thankyouMotivation");
-
-function myFunction() {
-	thankyouMotivation.textContent = "Thank you!";
-}
-
-var submitName = document.getElementById("submitName");
-submitName.addEventListener("click", myFunctionTwo);
-
-var thankyouName = document.getElementById("thankyouName");
-
-function myFunctionTwo() {
-	thankyouName.textContent = "Thank you!";
-}
-
 class student {
 	constructor (name, motivation) {
 		this.name = name;
@@ -24,6 +6,24 @@ class student {
 };
 
 let results = [];
+
+var submitMotivation = document.getElementById("submitMotivation");
+submitMotivation.addEventListener("click", storeMotivation);
+
+var thankyouMotivation = document.getElementById("thankyouMotivation");
+
+function storeMotivation() {
+	thankyouMotivation.textContent = "Thank you!";
+}
+
+var submitName = document.getElementById("submitName");
+submitName.addEventListener("click", storeName);
+
+var thankyouName = document.getElementById("thankyouName");
+
+function storeName() {
+	thankyouName.textContent = "Thank you!";
+}
 
 // Make the database point to the location root -> deck -> flashcards
 // If the location doesn't exist is will be created
