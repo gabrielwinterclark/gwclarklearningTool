@@ -47,3 +47,8 @@ document.getElementById("submitName").addEventListener("click",
 						      function () {
 	document.getElementById("thankyouName").innerHTML = "Thank you!";
 });
+
+document.getElementById("submitMotivation").addEventListener("click",
+						      function () {
+	document.getElementById("thankyouMotivation").innerHTML = "Thank you!";
+});
