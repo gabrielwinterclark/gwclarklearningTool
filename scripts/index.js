@@ -5,7 +5,7 @@ class student {
 	}
 };
 
-let results = [];
+let results =
 
 let counterMotivation = 0;
 
