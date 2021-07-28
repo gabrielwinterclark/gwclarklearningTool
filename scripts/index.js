@@ -7,14 +7,19 @@ class student {
 
 let results = [];
 
+let counterMotivation = 0;
+
 var submitMotivation = document.getElementById("submitMotivation");
 submitMotivation.addEventListener("click", storeMotivation);
 
 var thankyouMotivation = document.getElementById("thankyouMotivation");
 
 function storeMotivation() {
-	thankyouMotivation.textContent = "Thank you!";
+	thankyouMotivation.textContent = "Thank you!"
+	++counterMotivation;
 }
+
+let counterName = 0;
 
 var submitName = document.getElementById("submitName");
 submitName.addEventListener("click", storeName);
@@ -23,6 +28,8 @@ var thankyouName = document.getElementById("thankyouName");
 
 function storeName() {
 	thankyouName.textContent = "Thank you!";
+	results[counterName].name == providedName;
+	++counterName;
 }
 
 // Make the database point to the location root -> deck -> flashcards
