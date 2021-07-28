@@ -21,6 +21,8 @@ function storeMotivation() {
 
 let counterName = 0;
 
+var providedName = document.getElementById("providedName");
+
 var submitName = document.getElementById("submitName");
 submitName.addEventListener("click", storeName);
 
