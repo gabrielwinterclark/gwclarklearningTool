@@ -12,7 +12,7 @@ let counterMotivation = 0;
 var providedMotivation = document.getElementById("providedMotivation");
 
 var submitMotivation = document.getElementById("submitMotivation");
-submitMotivation.addEventListener("click", storeMotivation(counterMotivation);
+submitMotivation.addEventListener("click", storeMotivation(counterMotivation));
 
 var thankyouMotivation = document.getElementById("thankyouMotivation");
 
