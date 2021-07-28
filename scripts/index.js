@@ -12,13 +12,13 @@ let counterMotivation = 0;
 var providedMotivation = document.getElementById("providedMotivation");
 
 var submitMotivation = document.getElementById("submitMotivation");
-submitMotivation.addEventListener("click", storeMotivation);
+submitMotivation.addEventListener("click", storeMotivation(counterMotivation);
 
 var thankyouMotivation = document.getElementById("thankyouMotivation");
 
-function storeMotivation() {
+function storeMotivation(i) {
 	thankyouMotivation.textContent = "Thank you!"
-	results[counterMotivation].motivation = providedMotivation;
+	results[i].motivation = providedMotivation;
 	++counterMotivation;
 }
 
@@ -27,13 +27,13 @@ let counterName = 0;
 var providedName = document.getElementById("providedName");
 
 var submitName = document.getElementById("submitName");
-submitName.addEventListener("click", storeName);
+submitName.addEventListener("click", storeName(counterName));
 
 var thankyouName = document.getElementById("thankyouName");
 
-function storeName() {
+function storeName(i) {
 	thankyouName.textContent = "Thank you!";
-	results[counterName].name = providedName;
+	results[i].name = providedName;
 	++counterName;
 }
 
