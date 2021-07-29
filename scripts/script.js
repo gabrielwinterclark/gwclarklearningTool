@@ -26,11 +26,13 @@ window.addEventListener('beforeunload', function (e) {
 
 //home
 
+var thankyou = document.getElementById("thankyou");
+
 let form = document.getElementById("my-form")
 form.addEventListener("submit", () => {
 	event.preventDefault()
 	console.log("hey")
-
+    thankyou.textContent="Thank you!"
     let name = document.getElementById("input-name").value
     let motivation = document.getElementById("input-motivation").value
 
