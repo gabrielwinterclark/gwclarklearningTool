@@ -57,8 +57,7 @@ form.addEventListener("submit", () => {
 
 var lo1q1feedback = document.getElementById("lo1q1feedback");
 
-document.getElementById("lo1-q1-a-input").addEventListener("click", function ()
-=> {
+document.getElementById("lo1-q1-a-input").addEventListener("click", function () {
 	event.preventDefault();
 	console.log("hey");
     lo1q1feedback.textContent="Correct! Yes, Jeremiah values playing the cello as an end, for itself.";
