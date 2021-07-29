@@ -30,27 +30,27 @@ var thankyou = document.getElementById("thankyou");
 
 let form = document.getElementById("my-form")
 form.addEventListener("submit", () => {
-	event.preventDefault()
-	console.log("hey")
-    thankyou.textContent="Thank you!"
-    let name = document.getElementById("input-name").value
-    let motivation = document.getElementById("input-motivation").value
+	event.preventDefault();
+	console.log("hey");
+    thankyou.textContent="Thank you!";
+    let name = document.getElementById("input-name").value;
+    let motivation = document.getElementById("input-motivation").value;
 
-    console.log("name " + name)
-    console.log("motivation " + motivation)
+    console.log("name " + name);
+    console.log("motivation " + motivation);
 
     let inputs = {
         id: "",
         name,
         motivation,
         userId: "userID"
-    }
+    };
 
-    let inputRef = firestore.collection("inputs").doc()
+    let inputRef = firestore.collection("inputs").doc();
 
-    inputs.id = inputRef.id
+    inputs.id = inputRef.id;
 
-    inputRef.set(inputs)
+    inputRef.set(inputs);
 })
 
 //LO1
