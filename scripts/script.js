@@ -52,3 +52,27 @@ form.addEventListener("submit", () => {
 
     inputRef.set(inputs);
 })
+
+//LO1
+
+var lo1q1feedback = document.getElementById("lo1q1feedback");
+
+document.getElementById("lo1-q1-a-input").addEventListener("click", function ()
+=> {
+	event.preventDefault();
+	console.log("hey");
+    lo1q1feedback.textContent="Correct! Yes, Jeremiah values playing the cello as an end, for itself.";
+    let lo1q1a = document.getElementById("lo1-q1-a-input").value;
+
+    let inputs = {
+        id: "",
+        lo1q1a,
+        userId: "userID"
+    };
+
+    let inputRef = firestore.collection("inputs").doc();
+
+    inputs.id = inputRef.id;
+
+    inputRef.set(inputs);
+})
