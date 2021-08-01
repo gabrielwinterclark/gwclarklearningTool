@@ -1,4 +1,4 @@
-console.log("iteration 12")
+console.log("iteration 13")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -20,6 +20,4 @@ form.addEventListener("submit", () => {
     })
     .catch(error => console.log(error));
     
-        window.location.href="https://gabrielwinterclark.github.io/learning-tool/teacherdash";
-
 })
