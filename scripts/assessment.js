@@ -1,4 +1,4 @@
-console.log("iteration 3")
+console.log("iteration 4")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -24,5 +24,4 @@ form.addEventListener("submit", () => {
         assessment2
     })
     .catch(error => console.log(error));
-    response.sendRedirect("http://gabrielwinterclark.github.io/learning-tool/teacherdash")
 })
