@@ -1,4 +1,4 @@
-console.log(Testing LO1 connect to script)
+console.log(hi)
 
 // https://github.com/gabrielwinterclark/learning-tool
 
