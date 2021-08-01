@@ -23,5 +23,6 @@ form.addEventListener("submit", () => {
         assessment1,
         assessment2
     })
-    .catch(error => console.log(error))
+    .catch(error => console.log(error));
+    response.sendRedirect("http://gabrielwinterclark.github.io/learning-tool/teacherdash")
 })
