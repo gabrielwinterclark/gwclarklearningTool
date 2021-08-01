@@ -1,4 +1,4 @@
-console.log(hi)
+console.log(hello hello)
 
 // https://github.com/gabrielwinterclark/learning-tool
 
