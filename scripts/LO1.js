@@ -1,4 +1,4 @@
-console.log("iteration 7")
+console.log("iteration 8")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -78,19 +78,19 @@ form3.addEventListener("submit", () => {
 
     switch(value) {
         case "Incorrect (A)":
-            q3feedback.innerHTML = "Feedback A"
+            q3feedback.innerHTML = "You are partially correct. Aminah does value her master’s degree instrumentally, as a means to move towards her future career. But, is there anyone else who also instrumentally values their degree?"
             break;
         case "Incorrect (B)":
-            q3feedback.innerHTML = "Feedback B"
+            q3feedback.innerHTML = "Incorrect. Phoebe values her master’s degree intrinsically for itself."
             break;
         case "Incorrect (C)":
-            q3feedback.innerHTML = "Feedback C"
+            q3feedback.innerHTML = "You are partially correct. Sam does value her master’s degree instrumentally, as a means to eventually write a book about environmental science. But, is there anyone else who also instrumentally values their degree? "
             break;
         case "Correct (D)":
-            q3feedback.innerHTML = "Feedback D"
+            q3feedback.innerHTML = "Correct! Yes, both Aminah and Sam value their degrees instrumentally, as a means to achieve their future goals."
             break;
         case "Incorrect (E)":
-            q3feedback.innerHTML = "Feedback E"
+            q3feedback.innerHTML = "Not quite. Not all of the students instrumentally value their degree as a means to some other end. Think about who might value their degree intrinsically."
             break;            
     }
 
