@@ -22,6 +22,7 @@ form1.addEventListener("submit", () => {
             q1feedback.innerHTML = "Not quite. Remember, something has intrinsic value when it is valuable for itself. Jeremiah does, in fact, value playing the cello for itself: he values it intrinsically."
             break;
     }    
+}
     
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q1").set({
@@ -46,7 +47,7 @@ form1.addEventListener("submit", () => {
             q1feedback.innerHTML = "Correct! You may be wondering in what way May values playing the cello. Read on to find out."
             break;
     }    
-    
+}
 
         // third learn by doing exercise
     
@@ -77,6 +78,7 @@ form1.addEventListener("submit", () => {
             q1feedback.innerHTML = "Not quite. Not all of the students instrumentally value their degree as a means to some other end. Think about who might value their degree intrinsically."
             break;
     }    
+}
     
 // for retrieving info from firebase
     
