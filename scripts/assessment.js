@@ -5,6 +5,8 @@ console.log("iteration 4")
 let form = document.getElementById("assessment-form")
 form.addEventListener("submit", () => {
     event.preventDefault()
+    
+    window.location.href="https:/gabrielwinterclark.github.io/learning-tool/teacherdash";
 
     let assessment1 = document.querySelector('input[name="assessment-q1-answer"]:checked').value
     let assessment2 = document.querySelector('input[name="assessment-q2-answer"]:checked').value
