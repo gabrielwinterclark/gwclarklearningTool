@@ -1,6 +1,9 @@
-console.log("iteration 15")
+console.log("iteration 16")
 
 // https://github.com/gabrielwinterclark/learning-tool
+
+let seeresults = document.getElementById("seeresults");
+seeresults.style.visibility = "hidden";
 
 let form = document.getElementById("assessment-form")
 form.addEventListener("submit", () => {
@@ -12,8 +15,7 @@ form.addEventListener("submit", () => {
 
     //return
     
-    let seeresults = document.getElementById("seeresults");
-    seeresults.innerHTML = "Thank you! Click here to see your final results.";
+    seeresults.style.visibility = "visible";
     
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("assessment").set({
