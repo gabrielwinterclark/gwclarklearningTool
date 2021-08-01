@@ -23,7 +23,7 @@ form1.addEventListener("submit", () => {
             break;
     }    
 }
-    
+)    
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q1").set({
         q1: value,
@@ -48,6 +48,7 @@ form1.addEventListener("submit", () => {
             break;
     }    
 }
+                       )
 
         // third learn by doing exercise
     
@@ -79,7 +80,7 @@ form1.addEventListener("submit", () => {
             break;
     }    
 }
-    
+   )
 // for retrieving info from firebase
     
     // let a = { name: "Name" }
