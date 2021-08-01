@@ -1,4 +1,4 @@
-console.log("iteration 5")
+console.log("iteration 6")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -6,8 +6,6 @@ let form = document.getElementById("assessment-form")
 form.addEventListener("submit", () => {
     event.preventDefault();
     
-    window.location.href="https:/gabrielwinterclark.github.io/learning-tool/teacherdash";
-
     let assessment1 = document.querySelector('input[name="assessment-q1-answer"]:checked').value
     let assessment2 = document.querySelector('input[name="assessment-q2-answer"]:checked').value
     let assessment3 = document.querySelector('input[name="assessment-q3-answer"]:checked').value
@@ -26,4 +24,7 @@ form.addEventListener("submit", () => {
         assessment2
     })
     .catch(error => console.log(error));
+    
+        window.location.href="https:/gabrielwinterclark.github.io/learning-tool/teacherdash";
+
 })
