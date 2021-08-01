@@ -1,4 +1,4 @@
-console.log("iteration 11")
+console.log("iteration 12")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -11,18 +11,12 @@ form.addEventListener("submit", () => {
     let assessment3 = document.querySelector('input[name="assessment-q3-answer"]:checked').value;
 
     //return
-
-    let assessmentResults = {
-      assessment1,
-      assessment2,
-      assessment3,
-    };
   
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("assessment").set({
-        aq1: assessment1,
-        aq2: assessment2,
-        aq3: assessment3,
+       assessment1,
+       assessment2,
+       assessment3,
     })
     .catch(error => console.log(error));
     
