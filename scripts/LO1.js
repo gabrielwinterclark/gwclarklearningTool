@@ -34,11 +34,9 @@ let q2feedback = document.getElementById("lo1-q2-feedback")
 
 let form2 = document.getElementById("lo1-q2-form")
 form1.addEventListener("submit", () => {
-    event.preventDefault()
+    event.preventDefault();
 
     let value = document.querySelector('input[name="lo1-q2-answer"]:checked').value
-
-    //return
 
     switch(value) {
         case "Incorrect":
