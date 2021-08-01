@@ -49,10 +49,6 @@ form1.addEventListener("submit", () => {
             break;
     }    
     
-    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q2").set({
-        q2: value,
-    })
 
         // third learn by doing exercise
     
@@ -83,11 +79,6 @@ form1.addEventListener("submit", () => {
             q1feedback.innerHTML = "Not quite. Not all of the students instrumentally value their degree as a means to some other end. Think about who might value their degree intrinsically."
             break;
     }    
-    
-    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q3").set({
-        q3: value,
-    })
     
 // for retrieving info from firebase
     
