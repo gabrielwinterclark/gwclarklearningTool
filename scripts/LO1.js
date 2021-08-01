@@ -18,10 +18,10 @@ form1.addEventListener("submit", () => {
 
     switch(value) {
         case "Incorrect":
-            q1feedback.innerHTML = "feedback incorrect"
+            q1feedback.innerHTML = "Correct! Yes, Jeremiah values playing the cello as an end, for itself."
             break;
         case "Correct":
-            q1feedback.innerHTML = "feedback correct"
+            q1feedback.innerHTML = "Not quite. Remember, something has intrinsic value when it is valuable for itself. Jeremiah does, in fact, value playing the cello for itself: he values it intrinsically."
             break;
     }
 
