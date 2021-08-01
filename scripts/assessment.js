@@ -25,6 +25,6 @@ form.addEventListener("submit", () => {
     })
     .catch(error => console.log(error));
     
-        window.location.href="https:/gabrielwinterclark.github.io/learning-tool/teacherdash";
+        window.location.href="https://gabrielwinterclark.github.io/learning-tool/teacherdash";
 
 })
