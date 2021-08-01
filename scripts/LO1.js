@@ -61,3 +61,42 @@ form2.addEventListener("submit", () => {
     })
 
 })
+
+//question 3
+
+let q3feedback = document.getElementById("lo1-q3-feedback")
+
+let form3 = document.getElementById("lo1-q3-form")
+form3.addEventListener("submit", () => {
+    event.preventDefault()
+
+    let value = document.querySelector('input[name="lo1-q3-answer"]:checked').value
+
+    console.log("value = " + value)
+
+    //return
+
+    switch(value) {
+        case "Incorrect (A)":
+            q3feedback.innerHTML = "Feedback A"
+            break;
+        case "Incorrect (B)":
+            q3feedback.innerHTML = "Feedback B"
+            break;
+        case "Incorrect (C)":
+            q3feedback.innerHTML = "Feedback C"
+            break;
+        case "Correct (D)":
+            q3feedback.innerHTML = "Feedback D"
+            break;
+        case "Incorrect (E)":
+            q3feedback.innerHTML = "Feedback E"
+            break;            
+    }
+
+    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
+    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q3").set({
+        q3: value,
+    })
+
+})
