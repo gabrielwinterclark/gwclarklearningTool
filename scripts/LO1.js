@@ -52,9 +52,9 @@ form1.addEventListener("submit", () => {
 
         // third learn by doing exercise
     
-let q3feedback = document.getElementById("lo1-q3-feedback")
+let q3feedback = document.getElementById("lo1-q3-feedback");
 
-let form3 = document.getElementById("lo1-q3-form")
+let form3 = document.getElementById("lo1-q3-form");
 form1.addEventListener("submit", () => {
     event.preventDefault()
 
@@ -80,7 +80,8 @@ form1.addEventListener("submit", () => {
             break;
     }    
 }
-   )
+)
+
 // for retrieving info from firebase
     
     // let a = { name: "Name" }
