@@ -1,3 +1,5 @@
+console.log(Testing LO1 connect to script)
+
 // https://github.com/gabrielwinterclark/learning-tool
 
 //first learn by doing exercise
