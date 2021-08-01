@@ -21,7 +21,8 @@ form.addEventListener("submit", () => {
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("assessment").set({
         assessment1,
-        assessment2
+        assessment2,
+        assessment3,
     })
     .catch(error => console.log(error));
     
