@@ -4,7 +4,7 @@ console.log("iteration 5")
 
 let form = document.getElementById("assessment-form")
 form.addEventListener("submit", () => {
-    event.preventDefault()
+    event.preventDefault();
     
     window.location.href="https:/gabrielwinterclark.github.io/learning-tool/teacherdash";
 
