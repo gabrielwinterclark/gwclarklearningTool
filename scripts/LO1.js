@@ -1,4 +1,4 @@
-console.log("iteration 4")
+console.log("iteration 5")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -48,10 +48,10 @@ form2.addEventListener("submit", () => {
 
     switch(value) {
         case "Incorrect":
-            q1feedback.innerHTML = "Incorrect. Think about it: does May value playing the cello for itself, or for something else? In this case, it looks like May values playing the cello in service of something else. Read on to learn what type of value May assigns to playing the cello!"
+            q2feedback.innerHTML = "Incorrect. Think about it: does May value playing the cello for itself, or for something else? In this case, it looks like May values playing the cello in service of something else. Read on to learn what type of value May assigns to playing the cello!"
             break;
         case "Incorrect":
-            q1feedback.innerHTML = "Correct! You may be wondering in what way May values playing the cello. Read on to find out."
+            q2feedback.innerHTML = "Correct! You may be wondering in what way May values playing the cello. Read on to find out."
             break;
     }
 
