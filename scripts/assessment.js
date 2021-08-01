@@ -6,9 +6,9 @@ let form = document.getElementById("assessment-form")
 form.addEventListener("submit", () => {
     event.preventDefault();
     
-    let assessment1 = document.querySelector('input[name="assessment-q1-answer"]:checked').value;
-    let assessment2 = document.querySelector('input[name="assessment-q2-answer"]:checked').value;
-    let assessment3 = document.querySelector('input[name="assessment-q3-answer"]:checked').value;
+    let assessment1 = document.querySelector('input[name="assessmentq1answer"]:checked').value;
+    let assessment2 = document.querySelector('input[name="assessmentq2answer"]:checked').value;
+    let assessment3 = document.querySelector('input[name="assessmentq3answer"]:checked').value;
 
     //return
 
@@ -20,9 +20,9 @@ form.addEventListener("submit", () => {
   
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("assessment").set({
-        assessment-q1-answer,
-        assessment-q2-answer,
-        assessment-q3-answer,
+        assessmentq1answer,
+        assessmentq2answer,
+        assessmentq3answer,
     })
     .catch(error => console.log(error));
     
