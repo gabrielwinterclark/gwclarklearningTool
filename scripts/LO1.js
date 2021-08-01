@@ -30,37 +30,4 @@ form1.addEventListener("submit", () => {
         q1: value,
     })
 
-    // let a = { name: "Name" }
-    // let b = { type: "Type" }
-
-    // let c = {
-    //     ...a,
-    //     ...b
-    // }
-
-    // let doc = {
-    //     q1: "value",
-    //     q2: "",
-    //     q3: "",
-    //     name: ""
-    // }
-
-    // let name = document.getElementById("input-name").value;
-    // let motivation = document.getElementById("input-motivation").value;
-
-    // console.log("name " + name);
-    // console.log("motivation " + motivation);
-
-    // let inputs = {
-    //     id: "",
-    //     name,
-    //     motivation,
-    //     userId: "userID"
-    // };
-
-    // let inputRef = firestore.collection("inputs").doc();
-
-    // inputs.id = inputRef.id;
-
-    // inputRef.set(inputs);
 })
