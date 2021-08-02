@@ -1,4 +1,4 @@
-console.log("iteration 10")
+console.log("iteration 9")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -25,18 +25,12 @@ form1.addEventListener("submit", () => {
             break;
     }
 
-    let inputs = {
-        id: "",
-        value,
-        userId: "userID",
-    };
-    
-    let inputRef = firestore.collection("inputs").doc()
-    
-    inputs.id = inputRef.id
-    inputRef.set(inputs)
+    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
+    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q1").set({
+        q1: value,
+    })
 
-});
+})
 
 //question 2
 
