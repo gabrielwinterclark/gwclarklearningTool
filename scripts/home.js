@@ -1,4 +1,4 @@
-console.log("version 12")
+console.log("version 13")
 
 //home
 
@@ -22,7 +22,7 @@ form.addEventListener("submit", () => {
 
     firestore.collection("answers").doc(auth.currentUser.uid).add({
             name,
-            movitation,    
+            motivation,    
         })
 
     // VHxJJc0cGOV0Xt7kH8ZTjAgdy6V2
