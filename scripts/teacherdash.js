@@ -1,9 +1,10 @@
-console.log("yeehaw 9")
+console.log("yeehaw 10")
 
 const db = firebase.firestore(); 
 
 db.collection('answers').get().then((snapshot) => {
-    console.log(snapshot.docs);
+    snapshot.docs.forEach(doc => {
+        console.log(doc))
 })
-
+})
 //////////////////////////////////////////////////
