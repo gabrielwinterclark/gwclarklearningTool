@@ -1,4 +1,4 @@
-console.log("version 10")
+console.log("version 11")
 
 //home
 
@@ -18,18 +18,12 @@ form.addEventListener("submit", () => {
     console.log("name " + name);
     console.log("motivation " + motivation);
 
-    let q1 = {
-        name,
-        motivation,
-    };
-
 	    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
 
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("home").set({
-            name, // => name: name
-            motivation    
+    firestore.collection("answers").doc(auth.currentUser.uid).add({
+            name,
+            movitation,    
         })
-        .catch(error => console.log(error))
 
     // VHxJJc0cGOV0Xt7kH8ZTjAgdy6V2
     
