@@ -23,7 +23,7 @@ const inputListener = firestore.collection("answers").doc("userId").collection("
         let inputsElement = document.createElement("p")
         inputsElement.innerHTML = "Name: " + input.name + " || Motivation = " + input.motivation
             
-        /inputsDiv.appendChild(inputsElement)
+        inputsDiv.appendChild(inputsElement)
         })
     })
 
