@@ -1,3 +1,5 @@
+console.log("iteration 1")
+
 const inputsDiv = document.getElementById("inputs")
 
 const inputListener = firestore.collection("answers").doc("userId").collection("questions").doc("home")
