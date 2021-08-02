@@ -12,8 +12,8 @@ function renderAnswers(doc){
     let motivation = document.createElement('span');
     
   li.setAttribute('data-id', doc.id);
-    name.textContent = doc.data(home).name;
-    motivation.textContent = doc.data(home).motivation;
+    name.textContent = doc.data().name;
+    motivation.textContent = doc.data().motivation;
     
     li.appendChild(name);
     li.appendChild(motivation);
