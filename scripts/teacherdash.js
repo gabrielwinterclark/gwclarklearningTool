@@ -2,6 +2,8 @@ console.log("yeehaw 13")
 
 const results = document.getElementById('inputs');
 
+	  const db = firebase.firestore();
+
 //create element and render
 
 function renderAnswers(doc){
