@@ -28,7 +28,7 @@ const inputListener = firestore.collection("answers").doc("userId").collection("
     })
 
 window.addEventListener('beforeunload', function (e) {
-    //e.preventDefault();
-    //e.returnValue = '';
+    e.preventDefault();
+    e.returnValue = '';
     inputListener()
 });
