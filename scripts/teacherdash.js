@@ -1,4 +1,4 @@
-console.log("yeehaw 7")
+console.log("yeehaw 8")
 
 const inputsDiv = document.getElementById("inputs");
 
@@ -9,5 +9,8 @@ dbRef.child("users").child(userId).get().then((snapshot) => {
         let inputsElement = document.createElement("p");
         inputsElement.innerHTML = "Name: " + input.name + " || Motivation = " + input.motivation
         inputsDiv.appendChild(inputsElement)
-    })
+    } else {
+        console.log("No data available");
+    }).catch((error) => {
+        console.error(error);
 });
