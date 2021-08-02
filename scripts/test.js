@@ -46,8 +46,6 @@ const inputListener = firestore.collection("answers").doc("userId").collection("
         if(!doc.exists)
             return
 
-        inputsDiv.innerHTML = ""
-
         let homeData = doc.data()
 
         inputsDiv.innerHTML = "Name: " + homeData.name + ", " + homeData.motivation
