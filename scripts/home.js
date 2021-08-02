@@ -1,4 +1,4 @@
-console.log("version 5")
+console.log("version 6")
 
 //home
 
@@ -38,28 +38,22 @@ form.addEventListener("submit", () => {
 
 const inputsDiv = document.getElementById("inputs")
 
-const inputListener = firestore.collection("answers").doc("userId").collection("questions").doc("home")
-    .onSnapshot(doc => {
+const inputListener = firestore.collection("answers")
+    .onSnapshot(querySnapshot => {
         console.log("inputs listener")
-
-        if(!doc.exists)
-            return
 
         inputsDiv.innerHTML = ""
 
-        let homeData = doc.data()
+	querySnapshot.forEach(doc => {
+		console.log(doc.data())
+		
+        let input = doc.data()
 
-        inputsDiv.innerHTML = "Name: " + homeData.name + ", " + homeData.motivation
-
-        querySnapshot.forEach(doc => {
-        console.log(doc.data())
-
-       let input = doc.data()
-
-        let inputsElement = document.createElement("p")
-             inputsElement.innerHTML = "Name: " + input.name + " || Motivation = " + input.motivation
-            
-             inputsDiv.appendChild(inputsElement)
+let inputsElement = document.createElement("p")
+inputsElement.innerHTML = "Name: " + input.name + " | | Motivation = " + input.motivation
+		
+		inputsDiv.appendChild(inputsElement)
+    
          })
     })
 
