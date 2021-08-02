@@ -1,4 +1,4 @@
-console.log("hawyee 2")
+console.log("hawyee 3")
 
 const inputsDiv = document.getElementById("inputs")
 
