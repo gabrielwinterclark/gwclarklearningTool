@@ -9,11 +9,11 @@ const inputListener = firestore.collection("answers").doc("userId").collection("
         if(!doc.exists)
             return
 
-        inputsDiv.innerHTML = ""
+        inputsDiv.innerHTML = "";
 
-        let homeData = doc.data()
+        let homeData = doc.data();
 
-        inputsDiv.innerHTML = "Name: " + homeData.name + ", " + homeData.motivation
+        inputsDiv.innerHTML = "Name: " + homeData.name + ", " + homeData.motivation;
 
         querySnapshot.forEach(doc => {
         console.log(doc.data())
