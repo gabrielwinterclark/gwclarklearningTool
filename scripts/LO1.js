@@ -26,7 +26,7 @@ form1.addEventListener("submit", () => {
     }
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q1").set({
+    firestore.collection("answers").doc(auth.currentUser.uid).set({
         q1: value,
     })
 
@@ -56,7 +56,7 @@ form2.addEventListener("submit", () => {
     }
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q2").set({
+    firestore.collection("answers").doc(auth.currentUser.uid).set({
         q2: value,
     })
 
@@ -95,7 +95,7 @@ form3.addEventListener("submit", () => {
     }
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q3").set({
+    firestore.collection("answers").doc(auth.currentUser.uid).set({
         q3: value,
     })
 
