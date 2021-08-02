@@ -11,6 +11,7 @@ dbRef.child("users").child(userId).get().then((snapshot) => {
         inputsDiv.appendChild(inputsElement)
     } else {
         console.log("No data available");
+        
     }).catch((error) => {
         console.error(error);
 });
