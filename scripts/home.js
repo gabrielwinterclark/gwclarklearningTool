@@ -1,4 +1,4 @@
-console.log("version 8")
+console.log("version 7")
 
 //home
 
@@ -18,18 +18,47 @@ form.addEventListener("submit", () => {
     console.log("name " + name);
     console.log("motivation " + motivation);
 
-    let inputs = {
-        id: "",
+    let q1 = {
         name,
-	motivation,
-	userId: "userID"
+        motivation,
     };
 
-    let inputRef = firestore.collection("inputs").doc()
-    
-    inputs.id = inputRef.id
-    inputRef.set(inputs)
+    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("home")
+        .set({
+            name, // => name: name
+            motivation    
+        })
+        .catch(error => console.log(error))
+
+    // VHxJJc0cGOV0Xt7kH8ZTjAgdy6V2
     
 })
 
 //retrieving data
+
+const inputsDiv = document.getElementById("inputs")
+
+const inputListener = firestore.collection("answers")
+    .onSnapshot(querySnapshot => {
+        console.log("inputs listener")
+
+        inputsDiv.innerHTML = ""
+
+	querySnapshot.forEach(doc => {
+		console.log(doc.data())
+		
+        let input = doc.data()
+
+let inputsElement = document.createElement("p")
+inputsElement.innerHTML = "Name: " + input.name + " | | Motivation = " + input.motivation
+		
+		inputsDiv.appendChild(inputsElement)
+    
+         })
+    })
+
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    e.returnValue = '';
+    inputListener()
+});
