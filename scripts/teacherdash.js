@@ -1,4 +1,4 @@
-console.log("yeehaw 21")
+console.log("yeehaw 22")
 
 const results = document.getElementById('inputs');
 
@@ -12,8 +12,8 @@ function renderAnswers(doc){
   let motivation = document.createElement('span');
     
   li.setAttribute('data-id', doc.id);
-    name.textContent = doc.collection("questions").doc("home").name;
-    motivation.textContent = doc.collection("questions").doc("home").motivation;
+    name.textContent = doc.data().collection("questions").doc("home").data().name;
+    motivation.textContent = doc.data().collection("questions").doc("home").data().motivation;
     
     li.appendChild(name);
     li.appendChild(motivation);
