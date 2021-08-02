@@ -1,22 +1,35 @@
-console.log("version 18")
+console.log("version 10")
 
 //home
 
-	  const db = firebase.firestore();
-
-https://github.com/gabrielwinterclark/learning-tool/blob/main/scripts/teacherdash.js
 var thankyou = document.getElementById("thankyou");
 
 let form = document.getElementById("my-form")
-form.addEventListener("submit", (e) => {
-	e.preventDefault();
+form.addEventListener("submit", () => {
+	event.preventDefault();
 	
     thankyou.textContent="Thank you!";
 
-    db.collection("answers").doc(auth.currentUser.uid).collection("questions").add({
-            name: form.name.value,
-            motivation: form.motivation.value,
+    //console.log(auth.currentUser.uid)
+
+    let name = document.getElementById("input-name").value;
+    let motivation = document.getElementById("input-motivation").value;
+
+    console.log("name " + name);
+    console.log("motivation " + motivation);
+
+    let q1 = {
+        name,
+        motivation,
+    };
+
+	    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
+
+    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("home").set({
+            name, // => name: name
+            motivation    
         })
+        .catch(error => console.log(error))
 
     // VHxJJc0cGOV0Xt7kH8ZTjAgdy6V2
     
