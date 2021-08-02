@@ -1,4 +1,4 @@
-console.log("yeehaw 19")
+console.log("yeehaw 20")
 
 const results = document.getElementById('inputs');
 
