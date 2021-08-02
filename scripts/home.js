@@ -14,8 +14,8 @@ form.addEventListener("submit", (e) => {
     thankyou.textContent="Thank you!";
 
     db.collection("answers").doc(auth.currentUser.uid).add({
-            name: my-form.name.value,
-            motivation: my-form.name.value,
+            name: form.name.value,
+            motivation: form.name.value,
         })
 
     // VHxJJc0cGOV0Xt7kH8ZTjAgdy6V2
