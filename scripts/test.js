@@ -1,4 +1,4 @@
-console.log("hawyee")
+console.log("hawyee 2")
 
 const inputsDiv = document.getElementById("inputs")
 
@@ -15,16 +15,16 @@ const inputListener = firestore.collection("answers").doc("userId").collection("
 
         inputsDiv.innerHTML = "Name: " + homeData.name + ", " + homeData.motivation
 
-        // querySnapshot.forEach(doc => {
-        //     console.log(doc.data())
+        querySnapshot.forEach(doc => {
+             console.log(doc.data())
 
-        //     let input = doc.data()
+             let input = doc.data()
 
-        //     let inputsElement = document.createElement("p")
-        //     inputsElement.innerHTML = "Name: " + input.name + " || Motivation = " + input.motivation
+             let inputsElement = document.createElement("p")
+             inputsElement.innerHTML = "Name: " + input.name + " || Motivation = " + input.motivation
             
-        //     inputsDiv.appendChild(inputsElement)
-        // })
+             inputsDiv.appendChild(inputsElement)
+         })
     })
 
 window.addEventListener('beforeunload', function (e) {
