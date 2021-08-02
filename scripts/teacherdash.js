@@ -27,4 +27,3 @@ db.collection("answers").get().then((snapshot) => {
         renderAnswers(doc);        
 })
 })
-//////////////////////////////////////////////////
