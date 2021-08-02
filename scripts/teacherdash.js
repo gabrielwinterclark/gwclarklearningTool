@@ -12,8 +12,8 @@ function renderAnswers(doc){
   let motivation = document.createElement('span');
     
   li.setAttribute('data-id', doc.id);
-    name.textContent = doc.data().name;
-    motivation.textContent = doc.data().motivation;
+    name.textContent = doc.data(home).name;
+    motivation.textContent = doc.data(home).motivation;
     
     li.appendChild(name);
     li.appendChild(motivation);
@@ -22,7 +22,7 @@ function renderAnswers(doc){
     
 }
 
-db.collection('answers').doc('userId').collection('questions').doc('home').get().then((snapshot) => {
+db.collection('answers').doc('userId').collection('questions').get().then((snapshot) => {
     snapshot.docs.forEach(doc => {
         renderAnswers(doc);        
 })
