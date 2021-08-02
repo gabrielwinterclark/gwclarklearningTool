@@ -1,4 +1,4 @@
-console.log("version 8")
+console.log("version 9")
 
 //home
 
@@ -23,8 +23,7 @@ form.addEventListener("submit", () => {
         motivation,
     };
 
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("home")
-        .set({
+    firestore.collection("answers").doc(auth.currentUser.uid).set({
             name, // => name: name
             motivation    
         })
