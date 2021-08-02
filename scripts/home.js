@@ -2,27 +2,20 @@ console.log("version 13")
 
 //home
 
+	  const db = firebase.firestore();
+
+https://github.com/gabrielwinterclark/learning-tool/blob/main/scripts/teacherdash.js
 var thankyou = document.getElementById("thankyou");
 
 let form = document.getElementById("my-form")
-form.addEventListener("submit", () => {
-	event.preventDefault();
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
 	
     thankyou.textContent="Thank you!";
 
-    //console.log(auth.currentUser.uid)
-
-    let name = document.getElementById("input-name").value;
-    let motivation = document.getElementById("input-motivation").value;
-
-    console.log("name " + name);
-    console.log("motivation " + motivation);
-
-	    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-
-    firestore.collection("answers").doc(auth.currentUser.uid).add({
-            name,
-            motivation,    
+    db.collection("answers").doc(auth.currentUser.uid).add({
+            name: my-form.name.value,
+            motivation: my-form.name.value,
         })
 
     // VHxJJc0cGOV0Xt7kH8ZTjAgdy6V2
