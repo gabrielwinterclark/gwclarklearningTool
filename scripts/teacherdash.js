@@ -1,4 +1,4 @@
-console.log("yeehaw 18")
+console.log("yeehaw 19")
 
 const results = document.getElementById('inputs');
 
@@ -12,8 +12,8 @@ function renderAnswers(doc){
   let motivation = document.createElement('span');
     
   li.setAttribute('data-id', doc.id);
-    name.textContent = doc.data(questions).home.name;
-    motivation.textContent = doc.data(questions).home.motivation;
+    name.textContent = doc.data().name;
+    motivation.textContent = doc.data().motivation;
     
     li.appendChild(name);
     li.appendChild(motivation);
@@ -22,7 +22,7 @@ function renderAnswers(doc){
     
 }
 
-db.collection('answers').get().then((snapshot) => {
+db.collection('answers').doc('userId').collection('questions').doc('home').get().then((snapshot) => {
     snapshot.docs.forEach(doc => {
         renderAnswers(doc);        
 })
