@@ -25,12 +25,18 @@ form1.addEventListener("submit", () => {
             break;
     }
 
-    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q1").set({
-        q1: value,
-    })
+    let inputs = {
+        id: "",
+        value,
+        userId: "userID",
+    };
+    
+    let inputRef = firestore.collection("inputs").doc()
+    
+    inputs.id = inputRef.id
+    inputRef.set(inputs)
 
-})
+});
 
 //question 2
 
