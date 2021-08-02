@@ -23,7 +23,9 @@ form.addEventListener("submit", () => {
         motivation,
     };
 
-    firestore.collection("answers").doc(auth.currentUser.uid).set({
+	    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
+
+    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("home").set({
             name, // => name: name
             motivation    
         })
