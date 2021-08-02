@@ -1,4 +1,4 @@
-console.log("version 17")
+console.log("version 18")
 
 //home
 
@@ -13,7 +13,7 @@ form.addEventListener("submit", (e) => {
 	
     thankyou.textContent="Thank you!";
 
-    db.collection("answers").doc(auth.currentUser.uid).add({
+    db.collection("answers").doc(auth.currentUser.uid).collection("questions").add({
             name: form.name.value,
             motivation: form.motivation.value,
         })
