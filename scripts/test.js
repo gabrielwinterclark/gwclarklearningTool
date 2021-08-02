@@ -1,4 +1,4 @@
-console.log("hello there")
+console.log("hello there 2")
 
 const inputsDiv = document.getElementById("inputs")
 
