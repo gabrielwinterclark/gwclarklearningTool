@@ -1,4 +1,4 @@
-console.log("hawyee 3")
+console.log("hawyee 4")
 
 const inputsDiv = document.getElementById("inputs")
 
@@ -16,7 +16,7 @@ const inputListener = firestore.collection("answers").doc("userId").collection("
         inputsDiv.innerHTML = "Name: " + homeData.name + ", " + homeData.motivation
 
         querySnapshot.forEach(doc => {
-             console.log(doc.data())
+             console.log(for each)
 
              let input = doc.data()
 
