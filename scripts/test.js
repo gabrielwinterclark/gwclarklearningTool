@@ -1,23 +1,30 @@
-console.log("hello there 2")
+console.log("hawyee")
 
 const inputsDiv = document.getElementById("inputs")
 
-const inputListener = firestore.collection("inputs")
-    .onSnapshot(querySnapshot => {
+const inputListener = firestore.collection("answers").doc("userId").collection("questions").doc("home")
+    .onSnapshot(doc => {
         console.log("inputs listener")
+
+        if(!doc.exists)
+            return
 
         inputsDiv.innerHTML = ""
 
-        querySnapshot.forEach(doc => {
-            console.log(doc.data())
+        let homeData = doc.data()
 
-            let input = doc.data()
+        inputsDiv.innerHTML = "Name: " + homeData.name + ", " + homeData.motivation
 
-            let inputsElement = document.createElement("p")
-            inputsElement.innerHTML = "Name: " + input.name + " || Motivation = " + input.motivation
+        // querySnapshot.forEach(doc => {
+        //     console.log(doc.data())
+
+        //     let input = doc.data()
+
+        //     let inputsElement = document.createElement("p")
+        //     inputsElement.innerHTML = "Name: " + input.name + " || Motivation = " + input.motivation
             
-            inputsDiv.appendChild(inputsElement)
-        })
+        //     inputsDiv.appendChild(inputsElement)
+        // })
     })
 
 window.addEventListener('beforeunload', function (e) {
@@ -26,27 +33,38 @@ window.addEventListener('beforeunload', function (e) {
     inputListener()
 });
 
+//home
+
+var thankyou = document.getElementById("thankyou");
+
 let form = document.getElementById("my-form")
 form.addEventListener("submit", () => {
-	event.preventDefault()
-	console.log("hey")
+	event.preventDefault();
+	
+    thankyou.textContent="Thank you!";
 
-    let name = document.getElementById("input-name").value
-    let motivation = document.getElementById("input-motivation").value
+    //console.log(auth.currentUser.uid)
 
-    console.log("name " + name)
-    console.log("motivation " + motivation)
+    let name = document.getElementById("input-name").value;
+    let motivation = document.getElementById("input-motivation").value;
 
-    let inputs = {
-        id: "",
+    console.log("name " + name);
+    console.log("motivation " + motivation);
+
+    let q1 = {
         name,
         motivation,
-        userId: "userID"
-    }
+    };
 
-    let inputRef = firestore.collection("inputs").doc()
+    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("home")
+        .set({
+            name, // => name: name
+            motivation    
+        })
+        .catch(error => console.log(error))
 
-    inputs.id = inputRef.id
-
-    inputRef.set(inputs)
+    // VHxJJc0cGOV0Xt7kH8ZTjAgdy6V2
+    
 })
+
+
