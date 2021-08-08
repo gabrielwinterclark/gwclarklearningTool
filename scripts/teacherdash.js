@@ -1,3 +1,4 @@
+//console log to see when iterations load 
 console.log("yeehaw 48")
 
 const results = document.getElementById('inputs');
@@ -21,6 +22,7 @@ function renderAnswers(doc){
   let assessment1 = document.createElement('li');
   let assessment2 = document.createElement('li');
   let assessment3 = document.createElement('li');
+  let space = document.createElement('li');
     
   name.setAttribute('data-id', doc.id);
   name.textContent = doc.data().info[0];
@@ -37,6 +39,7 @@ function renderAnswers(doc){
   assessment1.textContent = doc.data().assessment[0];
   assessment2.textContent = doc.data().assessment[1];
   assessment3.textContent = doc.data().assessment[2];
+  space.textContent = "";
   
   name.appendChild(motivation);
   name.appendChild(LO1Q1);
@@ -51,6 +54,7 @@ function renderAnswers(doc){
   name.appendChild(assessment1);
   name.appendChild(assessment2);
   name.appendChild(assessment3);
+  name.appendChild(space);
     
     results.appendChild(name);
     
