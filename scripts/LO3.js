@@ -1,21 +1,13 @@
-console.log("iteration 2")
-
-// https://github.com/gabrielwinterclark/learning-tool
-
 //question 1
+//the same code/logic is used for all questions in the learning objectives; for an explanation, please see LO1.js, "question 1"
 
-let q1feedback = document.getElementById("lo3-q1-feedback")
+let q1feedback = document.getElementById("lo3-q1-feedback");
 
-let form1 = document.getElementById("lo3-q1-form")
+let form1 = document.getElementById("lo3-q1-form");
+
 form1.addEventListener("submit", () => {
-    event.preventDefault()
-
-    let value = document.querySelector('input[name="lo3-q1-answer"]:checked').value
-
-    console.log("value = " + value)
-
-    //return
-
+    event.preventDefault();
+    let value = document.querySelector('input[name="lo3-q1-answer"]:checked').value;
     switch(value) {
         case "Learning Objective 3, Question 1: Incorrect (A)":
             q1feedback.innerHTML = "Incorrect. Value theory is not a branch of mathematics."
@@ -29,29 +21,22 @@ form1.addEventListener("submit", () => {
         case "Learning Objective 3, Question 1: Incorrect (D)":
             q1feedback.innerHTML = "Incorrect. Value theory is not a branch of psychology."
             break;
-    }
-
-    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-     firestore.collection("answers").doc(auth.currentUser.uid).update({
+    };
+    firestore.collection("answers").doc(auth.currentUser.uid).update({
         LO3: firebase.firestore.FieldValue.arrayUnion(value),
-    })
-
-})
+    });
+});
 
 //question 2
+//the same code/logic is used for all questions in the learning objectives; for an explanation, please see LO1.js, "question 1"
 
-let q2feedback = document.getElementById("lo3-q2-feedback")
+let q2feedback = document.getElementById("lo3-q2-feedback");
 
-let form2 = document.getElementById("lo3-q2-form")
+let form2 = document.getElementById("lo3-q2-form");
+
 form2.addEventListener("submit", () => {
-    event.preventDefault()
-
-    let value = document.querySelector('input[name="lo3-q2-answer"]:checked').value
-
-    console.log("value = " + value)
-
-    //return
-
+    event.preventDefault();
+    let value = document.querySelector('input[name="lo3-q2-answer"]:checked').value;
     switch(value) {
         case "Learning Objective 3, Question 2: Incorrect (A)":
             q2feedback.innerHTML = "Incorrect. Value theory can have implications for human well-being, but it is not primarily concerned with questions about human well-being."
@@ -65,29 +50,22 @@ form2.addEventListener("submit", () => {
         case "Learning Objective 3, Question 2: Incorrect (D)":
             q2feedback.innerHTML = "Incorrect. Value theory can have implications in the field of economics, but it is not primarily concerned with economic questions."
             break;
-    }
-
-    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-     firestore.collection("answers").doc(auth.currentUser.uid).update({
+    };
+    firestore.collection("answers").doc(auth.currentUser.uid).update({
         LO3: firebase.firestore.FieldValue.arrayUnion(value),
-    })
-
-})
+    });
+});
 
 //question 3
+//the same code/logic is used for all questions in the learning objectives; for an explanation, please see LO1.js, "question 1"
 
-let q3feedback = document.getElementById("lo3-q3-feedback")
+let q3feedback = document.getElementById("lo3-q3-feedback");
 
-let form3 = document.getElementById("lo3-q3-form")
+let form3 = document.getElementById("lo3-q3-form");
+
 form3.addEventListener("submit", () => {
-    event.preventDefault()
-
-    let value = document.querySelector('input[name="lo3-q3-answer"]:checked').value
-
-    console.log("value = " + value)
-
-    //return
-
+    event.preventDefault();
+    let value = document.querySelector('input[name="lo3-q3-answer"]:checked').value;
     switch(value) {
         case "Learning Objective 3, Question 3: Incorrect (A)":
             q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides environmental policy?"
@@ -104,11 +82,8 @@ form3.addEventListener("submit", () => {
         case "Learning Objective 3, Question 3: Correct (E)":
             q3feedback.innerHTML = "Correct! Yes, value theory can be applied to any field you can think of that would benefit from asking evaluative questions."
             break;
-    }
-
-    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-     firestore.collection("answers").doc(auth.currentUser.uid).update({
+    };
+    firestore.collection("answers").doc(auth.currentUser.uid).update({
         LO3: firebase.firestore.FieldValue.arrayUnion(value),
-    })
-
-})
+    });
+});
