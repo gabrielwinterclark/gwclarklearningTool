@@ -1,4 +1,4 @@
-console.log("yeehaw 27")
+console.log("yeehaw 28")
 
 const results = document.getElementById('inputs');
 
@@ -11,7 +11,7 @@ function renderAnswers(doc){
   let questionAnswers = document.createElement('span');
     
   li.setAttribute('data-id', doc.id);
-    questionAnswers.textContent = doc.data().questions.assessment.[0];
+    questionAnswers.textContent = doc.data().questions.assessment[0];
     
     li.appendChild(questionAnswers);
     
