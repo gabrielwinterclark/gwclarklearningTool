@@ -1,5 +1,6 @@
-console.log("yeehaw 13")
+console.log("yeehaw 14")
 
+const db = firebase.firestore();
 var questionsRef = db.collection("answers").doc(auth.currentUser.uid);
 
 // https://github.com/gabrielwinterclark/learning-tool
