@@ -18,7 +18,7 @@ form.addEventListener("submit", () => {
     seeresults.style.visibility = "visible";
     
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-firestore.collection("answers").doc(auth.currentUser.uid).set({
+firestore.collection("answers").doc(auth.currentUser.uid).update({
             assessment: firebase.firestore.FieldValue.arrayUnion(assessment1),
         })
     
