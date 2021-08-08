@@ -7,9 +7,9 @@ const results = document.getElementById('inputs');
 //create element and render
 
 function renderAnswers(doc){
-  let user = document.createElement('p');
+  let user = document.createElement('li');
   let name = document.createElement('li');
-  let motivation = document.createElement('li');
+  let motivation = document.createElement('LI');
   let LO1Q1 = document.createElement('li');
   let LO1Q2 = document.createElement('li');
   let LO1Q3 = document.createElement('li');
