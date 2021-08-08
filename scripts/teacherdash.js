@@ -1,4 +1,4 @@
-console.log("yeehaw 33")
+console.log("yeehaw 34")
 
 const results = document.getElementById('inputs');
 
@@ -7,22 +7,20 @@ const results = document.getElementById('inputs');
 //create element and render
 
 function renderAnswers(doc){
-  let li = document.createElement('ul');
-  let name = document.createElement('li');
+  let name = document.createElement('p');
   let motivation = document.createElement('li');
   let LO1Q1 = document.createElement('li');
   let LO1Q2 = document.createElement('li');
   let LO1Q3 = document.createElement('li');
   let LO2Q1 = document.createElement('li');
-  let LO2Q2 = document.createElement('p');
-  let LO2Q3 = document.createElement('p');
-  let LO3Q1 = document.createElement('p');
-  let LO3Q2 = document.createElement('p');
-  let LO3Q3 = document.createElement('p');
-  let assessment1 = document.createElement('p');
-  let assessment2 = document.createElement('p');
-  let assessment3 = document.createElement('p');
-  let space = document.createElement('p');
+  let LO2Q2 = document.createElement('li');
+  let LO2Q3 = document.createElement('li');
+  let LO3Q1 = document.createElement('li');
+  let LO3Q2 = document.createElement('li');
+  let LO3Q3 = document.createElement('li');
+  let assessment1 = document.createElement('li');
+  let assessment2 = document.createElement('li');
+  let assessment3 = document.createElement('li');
     
   li.setAttribute('data-id', doc.id);
   name.textContent = doc.data().info[0];
@@ -39,25 +37,22 @@ function renderAnswers(doc){
   assessment1.textContent = doc.data().assessment[0];
   assessment2.textContent = doc.data().assessment[1];
   assessment3.textContent = doc.data().assessment[2];
-  space.textContent = "";
     
-  li.appendChild(name);
-  li.appendChild(motivation);
-  li.appendChild(LO1Q1);
-  li.appendChild(LO1Q2);
-  li.appendChild(LO1Q3);
-  li.appendChild(LO2Q1);
-  li.appendChild(LO2Q2);
-  li.appendChild(LO2Q3);
-  li.appendChild(LO3Q1);
-  li.appendChild(LO3Q2);
-  li.appendChild(LO3Q3);
-  li.appendChild(assessment1);
-  li.appendChild(assessment2);
-  li.appendChild(assessment3);
-  li.appendChild(space);
+  name.appendChild(motivation);
+  name.appendChild(LO1Q1);
+  name.appendChild(LO1Q2);
+  name.appendChild(LO1Q3);
+  name.appendChild(LO2Q1);
+  name.appendChild(LO2Q2);
+  name.appendChild(LO2Q3);
+  name.appendChild(LO3Q1);
+  name.appendChild(LO3Q2);
+  name.appendChild(LO3Q3);
+  name.appendChild(assessment1);
+  name.appendChild(assessment2);
+  name.appendChild(assessment3);
     
-    results.appendChild(li);
+    results.appendChild(name);
     
 }
 
