@@ -54,7 +54,7 @@ function renderAnswers(doc){
   li.appendChild(assessment2);
   li.appendChild(assessment3);
     
-    results.appendChild(name);
+    results.appendChild(li);
     
 }
 
