@@ -38,7 +38,6 @@ function renderAnswers(doc){
   assessment2.textContent = doc.data().assessment[1];
   assessment3.textContent = doc.data().assessment[2];
   
-  name.appendChild(name);
   name.appendChild(motivation);
   name.appendChild(LO1Q1);
   name.appendChild(LO1Q2);
