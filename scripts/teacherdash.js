@@ -1,4 +1,4 @@
-console.log("yeehaw 40")
+console.log("yeehaw 41")
 
 const results = document.getElementById('inputs');
 
@@ -9,18 +9,18 @@ const results = document.getElementById('inputs');
 function renderAnswers(doc){
   let name = document.createElement('p');
   let motivation = document.createElement('ol');
-  let LO1Q1 = document.createElement('li');
-  let LO1Q2 = document.createElement('li');
-  let LO1Q3 = document.createElement('li');
-  let LO2Q1 = document.createElement('li');
-  let LO2Q2 = document.createElement('li');
-  let LO2Q3 = document.createElement('li');
-  let LO3Q1 = document.createElement('li');
-  let LO3Q2 = document.createElement('li');
-  let LO3Q3 = document.createElement('li');
-  let assessment1 = document.createElement('li');
-  let assessment2 = document.createElement('li');
-  let assessment3 = document.createElement('li');
+  let LO1Q1 = document.createElement('ol');
+  let LO1Q2 = document.createElement('ol');
+  let LO1Q3 = document.createElement('ol');
+  let LO2Q1 = document.createElement('ol');
+  let LO2Q2 = document.createElement('ol');
+  let LO2Q3 = document.createElement('ol');
+  let LO3Q1 = document.createElement('ol');
+  let LO3Q2 = document.createElement('ol');
+  let LO3Q3 = document.createElement('ol');
+  let assessment1 = document.createElement('ol');
+  let assessment2 = document.createElement('ol');
+  let assessment3 = document.createElement('ol');
     
   name.setAttribute('data-id', doc.id);
   name.textContent = doc.data().info[0];
