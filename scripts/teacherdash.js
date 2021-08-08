@@ -9,7 +9,7 @@ const results = document.getElementById('inputs');
 function renderAnswers(doc){
   let li = document.createElement('li');
   let name = document.createElement('li');
-  let motivation = document.createElement('li');
+  let motivation = document.createElement('ul');
   let LO1Q1 = document.createElement('li');
   let LO1Q2 = document.createElement('li');
   let LO1Q3 = document.createElement('li');
