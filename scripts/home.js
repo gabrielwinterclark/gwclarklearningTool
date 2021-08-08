@@ -26,11 +26,11 @@ form.addEventListener("submit", () => {
 	    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
 
     firestore.collection("answers").doc(auth.currentUser.uid).set({
-            questions: firebase.firestore.FieldValue.arrayUnion("Name: " + name),
+            info: firebase.firestore.FieldValue.arrayUnion("Name: " + name),
         })
     
 	firestore.collection("answers").doc(auth.currentUser.uid).update({
-	    questions: firebase.firestore.FieldValue.arrayUnion("Motivation: " + motivation),
+	    info: firebase.firestore.FieldValue.arrayUnion("Motivation: " + motivation),
 	})
     // VHxJJc0cGOV0Xt7kH8ZTjAgdy6V2
     
