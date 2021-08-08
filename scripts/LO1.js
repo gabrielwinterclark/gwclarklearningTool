@@ -1,4 +1,4 @@
-console.log("yeehaw 19")
+console.log("yeehaw 20")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -27,7 +27,7 @@ form1.addEventListener("submit", () => {
 
     //new stuff
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q3").update({
+    firestore.collection("answers").doc(auth.currentUser.uid).update({
         regions: firebase.firestore.FieldValue.arrayUnion("test")
     });
 
