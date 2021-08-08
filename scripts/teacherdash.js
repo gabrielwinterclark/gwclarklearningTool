@@ -1,4 +1,4 @@
-console.log("yeehaw 34")
+console.log("yeehaw 35")
 
 const results = document.getElementById('inputs');
 
@@ -22,7 +22,7 @@ function renderAnswers(doc){
   let assessment2 = document.createElement('li');
   let assessment3 = document.createElement('li');
     
-  li.setAttribute('data-id', doc.id);
+  name.setAttribute('data-id', doc.id);
   name.textContent = doc.data().info[0];
   motivation.textContent = doc.data().info[1];
   LO1Q1.textContent = doc.data().LO1[0];
