@@ -5,6 +5,8 @@ console.log("yeehaw 14")
 const db = firebase.firestore();
 var questionsRef = db.collection("answers").doc(auth.currentUser.uid);
 
+//end new stuff
+
 // https://github.com/gabrielwinterclark/learning-tool
 
 //question 1
@@ -36,6 +38,7 @@ form1.addEventListener("submit", () => {
         regions: firebase.firestore.FieldValue.arrayUnion("test")
     });
 
+    //end new stuff
 })
 
 //question 2
