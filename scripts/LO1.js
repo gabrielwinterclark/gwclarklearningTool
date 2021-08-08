@@ -1,9 +1,9 @@
-console.log("yeehaw 14")
+console.log("yeehaw 15")
 
 //new stuff
 
 const db = firebase.firestore();
-var questionsRef = db.collection("answers").doc(auth.currentUser.uid);
+var questionsRef = db.collection("answers").doc(currentUser.uid);
 
 //end new stuff
 
