@@ -17,23 +17,23 @@ form1.addEventListener("submit", () => {
     //return
 
     switch(value) {
-        case "Incorrect (A)":
+        case "Learning Objective 3, Question 1: Incorrect (A)":
             q1feedback.innerHTML = "Incorrect. Value theory is not a branch of mathematics."
             break;
-        case "Incorrect (B)":
+        case "Learning Objective 3, Question 1: Incorrect (B)":
             q1feedback.innerHTML = "Not quite. Your answer is a little too specific!"
             break;
-        case "Correct (C)":
+        case "Learning Objective 3, Question 1: Correct (C)":
             q1feedback.innerHTML = "Correct! Yes, value theory is a branch of philosophy."
             break;
-        case "Incorrect (D)":
+        case "Learning Objective 3, Question 1: Incorrect (D)":
             q1feedback.innerHTML = "Incorrect. Value theory is not a branch of psychology."
             break;
     }
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo3-q1").set({
-        q7: value,
+     firestore.collection("answers").doc(auth.currentUser.uid).update({
+        LO3: firebase.firestore.FieldValue.arrayUnion(value),
     })
 
 })
@@ -53,23 +53,23 @@ form2.addEventListener("submit", () => {
     //return
 
     switch(value) {
-        case "Incorrect (A)":
+        case "Learning Objective 3, Question 2: Incorrect (A)":
             q2feedback.innerHTML = "Incorrect. Value theory can have implications for human well-being, but it is not primarily concerned with questions about human well-being."
             break;
-        case "Correct (B)":
+        case "Learning Objective 3, Question 2: Correct (B)":
             q2feedback.innerHTML = "Correct! Yes, value theory primarily explores questions about value and goodness."
             break;
-        case "Incorrect (C)":
+        case "Learning Objective 3, Question 2: Incorrect (C)":
             q2feedback.innerHTML = "Not quite. Value theory does sometimes draw from ethical philosophy, but it is not primarily concerned with ethical questions."
             break;
-        case "Incorrect (D)":
+        case "Learning Objective 3, Question 2: Incorrect (D)":
             q2feedback.innerHTML = "Incorrect. Value theory can have implications in the field of economics, but it is not primarily concerned with economic questions."
             break;
     }
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo3-q2").set({
-        q8: value,
+     firestore.collection("answers").doc(auth.currentUser.uid).update({
+        LO3: firebase.firestore.FieldValue.arrayUnion(value),
     })
 
 })
@@ -89,26 +89,26 @@ form3.addEventListener("submit", () => {
     //return
 
     switch(value) {
-        case "Incorrect (A)":
+        case "Learning Objective 3, Question 3: Incorrect (A)":
             q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides environmental policy?"
             break;
-        case "Incorrect (B)":
+        case "Learning Objective 3, Question 3: Incorrect (B)":
             q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides education?"
             break;
-        case "Incorrect (C)":
+        case "Learning Objective 3, Question 3: Incorrect (C)":
             q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides human well-being?"
             break;
-        case "Incorrect (D)":
+        case "Learning Objective 3, Question 3: Incorrect (D)":
             q3feedback.innerHTML = "Incorrect. We did discuss all of these as examples, but are they the only areas where value theory can be applied?"
             break;
-        case "Correct (E)":
+        case "Learning Objective 3, Question 3: Correct (E)":
             q3feedback.innerHTML = "Correct! Yes, value theory can be applied to any field you can think of that would benefit from asking evaluative questions."
             break;
     }
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo3-q3").set({
-        q9: value,
+     firestore.collection("answers").doc(auth.currentUser.uid).update({
+        LO3: firebase.firestore.FieldValue.arrayUnion(value),
     })
 
 })
