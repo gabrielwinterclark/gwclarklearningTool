@@ -1,11 +1,4 @@
-console.log("yeehaw 17")
-
-//new stuff
-
-const db = firebase.firestore();
-var questionsRef = db.collection("answers");
-
-//end new stuff
+console.log("yeehaw 18")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -34,7 +27,7 @@ form1.addEventListener("submit", () => {
 
     //new stuff
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    questionsRef.doc(auth.currentUser.uid).update({
+    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q3").update({
         regions: firebase.firestore.FieldValue.arrayUnion("test")
     });
 
