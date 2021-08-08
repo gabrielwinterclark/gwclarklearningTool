@@ -18,11 +18,18 @@ form.addEventListener("submit", () => {
     seeresults.style.visibility = "visible";
     
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("assessment").set({
-       assessment1,
-       assessment2,
-       assessment3,
-    })
+firestore.collection("answers").doc(auth.currentUser.uid).set({
+            assessment: firebase.firestore.FieldValue.arrayUnion(assessment1),
+        })
+    
+	firestore.collection("answers").doc(auth.currentUser.uid).update({
+	    assessment: firebase.firestore.FieldValue.arrayUnion(assessment2),
+	})
+    
+    firestore.collection("answers").doc(auth.currentUser.uid).update({
+	    assessment: firebase.firestore.FieldValue.arrayUnion(assessment3),
+	})
+    
     .catch(error => console.log(error));
     
 })
