@@ -7,7 +7,7 @@ const results = document.getElementById('inputs');
 //create element and render
 
 function renderAnswers(doc){
-  let name = document.createElement('h2');
+  let name = document.createElement('h3');
   let motivation = document.createElement('li');
   let LO1Q1 = document.createElement('li');
   let LO1Q2 = document.createElement('li');
