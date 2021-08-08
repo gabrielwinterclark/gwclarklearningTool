@@ -1,5 +1,7 @@
 console.log("yeehaw 14")
 
+//new stuff
+
 const db = firebase.firestore();
 var questionsRef = db.collection("answers").doc(auth.currentUser.uid);
 
@@ -28,6 +30,7 @@ form1.addEventListener("submit", () => {
             break;
     }
 
+    //new stuff
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     questionsRef.update({
         regions: firebase.firestore.FieldValue.arrayUnion("test")
