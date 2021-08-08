@@ -1,4 +1,4 @@
-console.log("yeehaw 42")
+console.log("yeehaw 43")
 
 const results = document.getElementById('inputs');
 
@@ -8,19 +8,19 @@ const results = document.getElementById('inputs');
 
 function renderAnswers(doc){
   let name = document.createElement('h2');
-  let motivation = document.createElement('ul');
-  let LO1Q1 = document.createElement('ul');
-  let LO1Q2 = document.createElement('ul');
-  let LO1Q3 = document.createElement('ul');
-  let LO2Q1 = document.createElement('ul');
-  let LO2Q2 = document.createElement('ul');
-  let LO2Q3 = document.createElement('ul');
-  let LO3Q1 = document.createElement('ul');
-  let LO3Q2 = document.createElement('ul');
-  let LO3Q3 = document.createElement('ul');
-  let assessment1 = document.createElement('ul');
-  let assessment2 = document.createElement('ul');
-  let assessment3 = document.createElement('ul');
+  let motivation = document.createElement('li');
+  let LO1Q1 = document.createElement('li');
+  let LO1Q2 = document.createElement('li');
+  let LO1Q3 = document.createElement('li');
+  let LO2Q1 = document.createElement('li');
+  let LO2Q2 = document.createElement('li');
+  let LO2Q3 = document.createElement('li');
+  let LO3Q1 = document.createElement('li');
+  let LO3Q2 = document.createElement('li');
+  let LO3Q3 = document.createElement('li');
+  let assessment1 = document.createElement('li');
+  let assessment2 = document.createElement('li');
+  let assessment3 = document.createElement('li');
     
   name.setAttribute('data-id', doc.id);
   name.textContent = doc.data().info[0];
