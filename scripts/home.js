@@ -25,9 +25,9 @@ form.addEventListener("submit", () => {
 
 	    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
 
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("home").set({
-            name, // => name: name
-            motivation    
+    firestore.collection("answers").doc(auth.currentUser.uid).set({
+            questions: firebase.firestore.FieldValue.arrayUnion("Name: " + name),
+	    questions: firebase.firestore.FieldValue.arrayUnion("Motivation: " + motivation),
         })
         .catch(error => console.log(error))
 
