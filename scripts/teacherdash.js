@@ -1,4 +1,4 @@
-console.log("yeehaw 30")
+console.log("yeehaw 31")
 
 const results = document.getElementById('inputs');
 
@@ -25,20 +25,20 @@ function renderAnswers(doc){
   let space = document.createElement('span');
     
   li.setAttribute('data-id', doc.id);
-  name.textContent = doc.data().assessment[0];
-  motivation.textContent = doc.data().assessment[0];
-  LO1Q1.textContent = doc.data().assessment[0];
-  LO1Q2.textContent = doc.data().assessment[0];
-  LO1Q3.textContent = doc.data().assessment[0];
-  LO2Q1.textContent = doc.data().assessment[0];
-  LO2Q2.textContent = doc.data().assessment[0];
-  LO2Q3.textContent = doc.data().assessment[0];
-  LO3Q1.textContent = doc.data().assessment[0];
-  LO3Q2.textContent = doc.data().assessment[0];
-  LO3Q3.textContent = doc.data().assessment[0];
+  name.textContent = doc.data().info[0];
+  motivation.textContent = doc.data().info[1];
+  LO1Q1.textContent = doc.data().LO1[0];
+  LO1Q2.textContent = doc.data().LO1[1];
+  LO1Q3.textContent = doc.data().LO1[2];
+  LO2Q1.textContent = doc.data().LO2[0];
+  LO2Q2.textContent = doc.data().LO2[1];
+  LO2Q3.textContent = doc.data().LO2[2];
+  LO3Q1.textContent = doc.data().LO3[0];
+  LO3Q2.textContent = doc.data().LO3[1];
+  LO3Q3.textContent = doc.data().LO3[2];
   assessment1.textContent = doc.data().assessment[0];
-  assessment2.textContent = doc.data().assessment[0];
-  assessment3.textContent = doc.data().assessment[0];
+  assessment2.textContent = doc.data().assessment[1];
+  assessment3.textContent = doc.data().assessment[2];
   space.textContent = "";
     
   li.appendChild(name);
