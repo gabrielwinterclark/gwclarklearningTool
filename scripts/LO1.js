@@ -1,4 +1,4 @@
-console.log("yeehaw 24")
+console.log("yeehaw 25")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -27,7 +27,7 @@ form1.addEventListener("submit", () => {
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     //add it here!! (the update elements in an array)
-    firestore.collection("answers").doc(auth.currentUser.uid).update({
+    firestore.collection("answers").doc(auth.currentUser.uid).set({
         questions: firebase.firestore.FieldValue.arrayUnion(value),
     })
 
