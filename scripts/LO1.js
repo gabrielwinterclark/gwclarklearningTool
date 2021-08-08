@@ -1,4 +1,4 @@
-console.log("yeehaw 12")
+console.log("yeehaw 13")
 
 var questionsRef = db.collection("answers").doc(auth.currentUser.uid);
 
