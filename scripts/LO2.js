@@ -16,7 +16,7 @@ form1.addEventListener("submit", () => {
             q1feedback.innerHTML = "Not quite. Remember, something has intrinsic value by this second definition when it is valued for its nonrelational properties, or those properties that can’t be separated from it. Is a car being well made separable from the car itself?"
             break;
     };
-   firestore.collection("answers").doc(auth.currentUser.uid).update({
+    firestore.collection("answers").doc(auth.currentUser.uid).update({
         LO2: firebase.firestore.FieldValue.arrayUnion(value),
     });
 });
