@@ -18,11 +18,6 @@ form.addEventListener("submit", () => {
     console.log("name " + name);
     console.log("motivation " + motivation);
 
-    let q1 = {
-        name,
-        motivation,
-    };
-
 	    // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
 
     firestore.collection("answers").doc(auth.currentUser.uid).set({
