@@ -1,5 +1,7 @@
 console.log("yeehaw 12")
 
+var questionsRef = db.collection("answers").doc(auth.currentUser.uid);
+
 // https://github.com/gabrielwinterclark/learning-tool
 
 //question 1
@@ -26,9 +28,9 @@ form1.addEventListener("submit", () => {
     }
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).field("questions").set({
-        value,
-    })
+    questionsRef.update({
+        regions: firebase.firestore.FieldValue.arrayUnion("test")
+    });
 
 })
 
