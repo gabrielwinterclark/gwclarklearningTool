@@ -8,15 +8,12 @@ const results = document.getElementById('inputs');
 
 function renderAnswers(doc){
   let li = document.createElement('li');
-  let name = document.createElement('span');
-  let motivation = document.createElement('span');
+  let questionAnswers = document.createElement('span');
     
   li.setAttribute('data-id', doc.id);
-    name.textContent = doc.data().questions;
-    motivation.textContent = doc.data().motivation;
+    questionAnswers.textContent = doc.data();
     
-    li.appendChild(questions);
-    li.appendChild(motivation);
+    li.appendChild(questionAnswers);
     
     results.appendChild(li);
     
