@@ -7,20 +7,20 @@ const results = document.getElementById('inputs');
 //create element and render
 
 function renderAnswers(doc){
-  let name = document.createElement('p');
-  let motivation = document.createElement('p');
-  let LO1Q1 = document.createElement('p');
-  let LO1Q2 = document.createElement('p');
-  let LO1Q3 = document.createElement('p');
-  let LO2Q1 = document.createElement('p');
-  let LO2Q2 = document.createElement('p');
-  let LO2Q3 = document.createElement('p');
-  let LO3Q1 = document.createElement('p');
-  let LO3Q2 = document.createElement('p');
-  let LO3Q3 = document.createElement('p');
-  let assessment1 = document.createElement('p');
-  let assessment2 = document.createElement('p');
-  let assessment3 = document.createElement('p');
+  let name = document.createElement('li');
+  let motivation = document.createElement('li');
+  let LO1Q1 = document.createElement('li');
+  let LO1Q2 = document.createElement('li');
+  let LO1Q3 = document.createElement('li');
+  let LO2Q1 = document.createElement('li');
+  let LO2Q2 = document.createElement('li');
+  let LO2Q3 = document.createElement('li');
+  let LO3Q1 = document.createElement('li');
+  let LO3Q2 = document.createElement('li');
+  let LO3Q3 = document.createElement('li');
+  let assessment1 = document.createElement('li');
+  let assessment2 = document.createElement('li');
+  let assessment3 = document.createElement('li');
     
   name.setAttribute('data-id', doc.id);
   name.textContent = doc.data().info[0];
