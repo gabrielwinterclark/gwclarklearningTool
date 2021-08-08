@@ -12,10 +12,10 @@ function renderAnswers(doc){
   let motivation = document.createElement('span');
     
   li.setAttribute('data-id', doc.id);
-    name.textContent = doc.data().name;
+    name.textContent = doc.data().questions;
     motivation.textContent = doc.data().motivation;
     
-    li.appendChild(name);
+    li.appendChild(questions);
     li.appendChild(motivation);
     
     results.appendChild(li);
