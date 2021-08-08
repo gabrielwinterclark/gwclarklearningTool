@@ -1,4 +1,4 @@
-console.log("iteration 10")
+console.log("yeehaw 11")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -26,8 +26,8 @@ form1.addEventListener("submit", () => {
     }
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q1").set({
-        q1: value,
+    firestore.collection("answers").doc(auth.currentUser.uid).field("questions").set({
+        value,
     })
 
 })
