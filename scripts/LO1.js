@@ -1,4 +1,4 @@
-console.log("yeehaw 20")
+console.log("yeehaw 21")
 
 // https://github.com/gabrielwinterclark/learning-tool
 
@@ -25,13 +25,11 @@ form1.addEventListener("submit", () => {
             break;
     }
 
-    //new stuff
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).update({
-        regions: firebase.firestore.FieldValue.arrayUnion("test")
-    });
+    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q1").set({
+        q1: value,
+    })
 
-    //end new stuff
 })
 
 //question 2
@@ -59,7 +57,9 @@ form2.addEventListener("submit", () => {
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     
-    firestore.collection("answers").doc(auth.currentUser.uid).FieldValue.arrayUnion("value")
+    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q2").set({
+        q2: value,
+    })
 
 })
 
