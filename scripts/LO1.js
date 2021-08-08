@@ -27,7 +27,7 @@ form1.addEventListener("submit", () => {
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     //add it here!! (the update elements in an array)
-    firestore.collection("answers").doc(auth.currentUser.uid).update({
+    firestore.collection("answers").doc(auth.currentUser.uid).set({
         questions: firebase.firestore.FieldValue.arrayUnion(value),
     })
 
@@ -58,7 +58,7 @@ form2.addEventListener("submit", () => {
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
     
-    firestore.collection("answers").doc(auth.currentUser.uid).set({
+    firestore.collection("answers").doc(auth.currentUser.uid).update({
         questions: firebase.firestore.FieldValue.arrayUnion(value),
     })
 
@@ -97,8 +97,8 @@ form3.addEventListener("submit", () => {
     }
 
     // firestore.collection("answers").doc("userId").collection("questions").doc("lo1-q1").set(q1)
-    firestore.collection("answers").doc(auth.currentUser.uid).collection("questions").doc("lo1-q3").set({
-        q3: value,
+     firestore.collection("answers").doc(auth.currentUser.uid).update({
+        questions: firebase.firestore.FieldValue.arrayUnion(value),
     })
 
 })
