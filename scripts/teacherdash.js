@@ -7,13 +7,13 @@ const results = document.getElementById('inputs');
 //create element and render
 
 function renderAnswers(doc){
-  let li = document.createElement('li');
-  let name = document.createElement('p');
-  let motivation = document.createElement('p');
-  let LO1Q1 = document.createElement('p');
-  let LO1Q2 = document.createElement('p');
-  let LO1Q3 = document.createElement('p');
-  let LO2Q1 = document.createElement('p');
+  let li = document.createElement('ul');
+  let name = document.createElement('li');
+  let motivation = document.createElement('li');
+  let LO1Q1 = document.createElement('li');
+  let LO1Q2 = document.createElement('li');
+  let LO1Q3 = document.createElement('li');
+  let LO2Q1 = document.createElement('li');
   let LO2Q2 = document.createElement('p');
   let LO2Q3 = document.createElement('p');
   let LO3Q1 = document.createElement('p');
