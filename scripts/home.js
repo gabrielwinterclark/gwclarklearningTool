@@ -1,4 +1,4 @@
-console.log("yeehaw 11")
+console.log("yeehaw 12")
 
 //home
 
@@ -27,10 +27,11 @@ form.addEventListener("submit", () => {
 
     firestore.collection("answers").doc(auth.currentUser.uid).set({
             questions: firebase.firestore.FieldValue.arrayUnion("Name: " + name),
-	    questions: firebase.firestore.FieldValue.arrayUnion("Motivation: " + motivation),
         })
-        .catch(error => console.log(error))
-
+    
+	firestore.collection("answers").doc(auth.currentUser.uid).update({
+	    questions: firebase.firestore.FieldValue.arrayUnion("Motivation: " + motivation),
+	})
     // VHxJJc0cGOV0Xt7kH8ZTjAgdy6V2
     
 });
