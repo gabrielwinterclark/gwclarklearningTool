@@ -10,16 +10,16 @@ form1.addEventListener("submit", () => {
     let value = document.querySelector('input[name="lo3-q1-answer"]:checked').value;
     switch(value) {
         case "Learning Objective 3, Question 1: Incorrect (A)":
-            q1feedback.innerHTML = "Incorrect. Value theory is not a branch of mathematics."
+            q1feedback.innerHTML = "Incorrect. Value theory is not a branch of mathematics. The correct answer is philosophy."
             break;
         case "Learning Objective 3, Question 1: Incorrect (B)":
-            q1feedback.innerHTML = "Not quite. Your answer is a little too specific!"
+            q1feedback.innerHTML = "Not quite. Your answer is a little too specific! The correct answer is philosophy."
             break;
         case "Learning Objective 3, Question 1: Correct (C)":
             q1feedback.innerHTML = "Correct! Yes, value theory is a branch of philosophy."
             break;
         case "Learning Objective 3, Question 1: Incorrect (D)":
-            q1feedback.innerHTML = "Incorrect. Value theory is not a branch of psychology."
+            q1feedback.innerHTML = "Incorrect. Value theory is not a branch of psychology. The correct answer is philosophy."
             break;
     };
     firestore.collection("answers").doc(auth.currentUser.uid).update({
@@ -39,16 +39,16 @@ form2.addEventListener("submit", () => {
     let value = document.querySelector('input[name="lo3-q2-answer"]:checked').value;
     switch(value) {
         case "Learning Objective 3, Question 2: Incorrect (A)":
-            q2feedback.innerHTML = "Incorrect. Value theory can have implications for human well-being, but it is not primarily concerned with questions about human well-being."
+            q2feedback.innerHTML = "Incorrect. Value theory can have implications for human well-being, but it is not primarily concerned with questions about human well-being. The correct answer is value & goodness."
             break;
         case "Learning Objective 3, Question 2: Correct (B)":
             q2feedback.innerHTML = "Correct! Yes, value theory primarily explores questions about value and goodness."
             break;
         case "Learning Objective 3, Question 2: Incorrect (C)":
-            q2feedback.innerHTML = "Not quite. Value theory does sometimes draw from ethical philosophy, but it is not primarily concerned with ethical questions."
+            q2feedback.innerHTML = "Not quite. Value theory does sometimes draw from ethical philosophy, but it is not primarily concerned with ethical questions. The correct answer is value & goodness."
             break;
         case "Learning Objective 3, Question 2: Incorrect (D)":
-            q2feedback.innerHTML = "Incorrect. Value theory can have implications in the field of economics, but it is not primarily concerned with economic questions."
+            q2feedback.innerHTML = "Incorrect. Value theory can have implications in the field of economics, but it is not primarily concerned with economic questions. The correct answer is value & goodness."
             break;
     };
     firestore.collection("answers").doc(auth.currentUser.uid).update({
@@ -68,16 +68,16 @@ form3.addEventListener("submit", () => {
     let value = document.querySelector('input[name="lo3-q3-answer"]:checked').value;
     switch(value) {
         case "Learning Objective 3, Question 3: Incorrect (A)":
-            q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides environmental policy?"
+            q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides environmental policy? The correct answer is any field of study that would benefit from asking evaluative questions."
             break;
         case "Learning Objective 3, Question 3: Incorrect (B)":
-            q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides education?"
+            q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides education? The correct answer is any field of study that would benefit from asking evaluative questions."
             break;
         case "Learning Objective 3, Question 3: Incorrect (C)":
-            q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides human well-being?"
+            q3feedback.innerHTML = "Not quite, your answer is too specific! What can value theory be applied to besides human well-being? The correct answer is any field of study that would benefit from asking evaluative questions."
             break;
         case "Learning Objective 3, Question 3: Incorrect (D)":
-            q3feedback.innerHTML = "Incorrect. We did discuss all of these as examples, but are they the only areas where value theory can be applied?"
+            q3feedback.innerHTML = "Incorrect. We did discuss all of these as examples, but are they the only areas where value theory can be applied? The correct answer is any field of study that would benefit from asking evaluative questions."
             break;
         case "Learning Objective 3, Question 3: Correct (E)":
             q3feedback.innerHTML = "Correct! Yes, value theory can be applied to any field you can think of that would benefit from asking evaluative questions."
