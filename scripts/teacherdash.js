@@ -1,13 +1,12 @@
-//console log to see when iterations load 
-console.log("yeehaw 48")
-
+//grab the "inputs" paragraph from the HTML so the code knows where to print our results
 const results = document.getElementById('inputs');
 
-	  const db = firebase.firestore();
+//define db for the function below
+const db = firebase.firestore();
 
-//create element and render
-
+//make a function that prints out all of our users' results
 function renderAnswers(doc){
+//declare variables for each answer that the user has submitted and create a list item element for each
   let name = document.createElement('li');
   let motivation = document.createElement('li');
   let LO1Q1 = document.createElement('li');
@@ -22,8 +21,9 @@ function renderAnswers(doc){
   let assessment1 = document.createElement('li');
   let assessment2 = document.createElement('li');
   let assessment3 = document.createElement('li');
+//add a space at the bottom so that there is space between each users' results
   let space = document.createElement('li');
-    
+//define the text content for each variable by the corresponding value stored in the array in firebase
   name.setAttribute('data-id', doc.id);
   name.textContent = doc.data().info[0];
   motivation.textContent = doc.data().info[1];
@@ -39,8 +39,9 @@ function renderAnswers(doc){
   assessment1.textContent = doc.data().assessment[0];
   assessment2.textContent = doc.data().assessment[1];
   assessment3.textContent = doc.data().assessment[2];
+//the space does not have any text content since it's blank
   space.textContent = "";
-  
+//tack each answer onto the user's name
   name.appendChild(motivation);
   name.appendChild(LO1Q1);
   name.appendChild(LO1Q2);
@@ -55,13 +56,13 @@ function renderAnswers(doc){
   name.appendChild(assessment2);
   name.appendChild(assessment3);
   name.appendChild(space);
-    
-    results.appendChild(name);
-    
-}
+//put the answers into the HTML document using the variable defined in line 2
+  results.appendChild(name);
+};
 
+//for each document in "answers" in firebase (i.e., each user), we run the function above
 db.collection("answers").get().then((snapshot) => {
     snapshot.docs.forEach(doc => {
         renderAnswers(doc);        
-})
-})
+    })
+});
