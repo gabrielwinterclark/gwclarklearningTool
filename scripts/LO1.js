@@ -18,7 +18,7 @@ form1.addEventListener("submit", () => {
             q1feedback.innerHTML = "Correct! Yes, Jeremiah values playing the cello as an end, for itself."
             break;
         case "Learning Objective 1, Question 1: Incorrect (B)":
-            q1feedback.innerHTML = "Not quite. Remember, something has intrinsic value when it is valuable for itself. Jeremiah does, in fact, value playing the cello for itself: he values it intrinsically."
+            q1feedback.innerHTML = "Not quite. Remember, something has intrinsic value when it is valuable for itself. Jeremiah does, in fact, value playing the cello for itself: he values it intrinsically. The correct answer is 'yes.'"
             break;
     };
 //store the value of the user's answer (as defined in the HTML) in Firebase
@@ -39,7 +39,7 @@ form2.addEventListener("submit", () => {
     let value = document.querySelector('input[name="lo1-q2-answer"]:checked').value;
     switch(value) {
         case "Learning Objective 1, Question 2: Incorrect (A)":
-            q2feedback.innerHTML = "Incorrect. Think about it: does May value playing the cello for itself, or for something else? In this case, it looks like May values playing the cello in service of something else. Read on to learn what type of value May assigns to playing the cello!"
+            q2feedback.innerHTML = "Incorrect. Think about it: does May value playing the cello for itself, or for something else? In this case, it looks like May values playing the cello in service of something else. So the correct answer is 'no.' Read on to learn what type of value May assigns to playing the cello!"
             break;
         case "Learning Objective 1, Question 2: Correct (B)":
             q2feedback.innerHTML = "Correct! You may be wondering in what way May values playing the cello. Read on to find out."
@@ -62,19 +62,19 @@ form3.addEventListener("submit", () => {
     let value = document.querySelector('input[name="lo1-q3-answer"]:checked').value;
     switch(value) {
         case "Learning Objective 1, Question 3: Incorrect (A)":
-            q3feedback.innerHTML = "You are partially correct. Aminah does value her master’s degree instrumentally, as a means to move towards her future career. But, is there anyone else who also instrumentally values their degree?"
+            q3feedback.innerHTML = "You are partially correct. Aminah does value her master’s degree instrumentally, as a means to move towards her future career. But, is there anyone else who also instrumentally values their degree? The correct answer is Aminah and Sam."
             break;
         case "Learning Objective 1, Question 3: Incorrect (B)":
-            q3feedback.innerHTML = "Incorrect. Phoebe values her master’s degree intrinsically for itself."
+            q3feedback.innerHTML = "Incorrect. Phoebe values her master’s degree intrinsically for itself. The correct answer is Aminah and Sam."
             break;
         case "Learning Objective 1, Question 3: Incorrect (C)":
-            q3feedback.innerHTML = "You are partially correct. Sam does value his master’s degree instrumentally, as a means to eventually write a book about environmental science. But, is there anyone else who also instrumentally values their degree? "
+            q3feedback.innerHTML = "You are partially correct. Sam does value his master’s degree instrumentally, as a means to eventually write a book about environmental science. But, is there anyone else who also instrumentally values their degree? The correct answer is Aminah and Sam."
             break;
         case "Learning Objective 1, Question 3: Correct (D)":
             q3feedback.innerHTML = "Correct! Yes, both Aminah and Sam value their degrees instrumentally, as a means to achieve their future goals."
             break;
         case "Learning Objective 1, Question 3: Incorrect (E)":
-            q3feedback.innerHTML = "Not quite. Not all of the students instrumentally value their degree as a means to some other end. Think about who might value their degree intrinsically."
+            q3feedback.innerHTML = "Not quite. Not all of the students instrumentally value their degree as a means to some other end. Think about who might value their degree intrinsically. The correct answer is Aminah and Sam."
             break;            
     };
     firestore.collection("answers").doc(auth.currentUser.uid).update({
