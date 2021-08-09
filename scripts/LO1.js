@@ -51,6 +51,7 @@ form2.addEventListener("submit", () => {
 });
 
 //question 3
+//the same code/logic is used for all questions in the learning objectives; for an explanation, please see LO1.js, "question 1"
 
 let q3feedback = document.getElementById("lo1-q3-feedback");
 
