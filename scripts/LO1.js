@@ -18,7 +18,7 @@ form1.addEventListener("submit", () => {
             q1feedback.innerHTML = "Correct! Yes, Jeremiah values playing the cello as an end, for itself."
             break;
         case "Learning Objective 1, Question 1: Incorrect (B)":
-            q1feedback.innerHTML = "Not quite. Remember, something has intrinsic value when it is valuable for itself. Jeremiah does, in fact, value playing the cello for itself: he values it intrinsically. The correct answer is 'yes.'"
+            q1feedback.innerHTML = "Not quite. Remember, something has intrinsic value when it is valuable for itself. Jeremiah does, in fact, value playing the cello for itself: he values it intrinsically. The correct answer is yes."
             break;
     };
 //store the value of the user's answer (as defined in the HTML) in Firebase
@@ -39,7 +39,7 @@ form2.addEventListener("submit", () => {
     let value = document.querySelector('input[name="lo1-q2-answer"]:checked').value;
     switch(value) {
         case "Learning Objective 1, Question 2: Incorrect (A)":
-            q2feedback.innerHTML = "Incorrect. Think about it: does May value playing the cello for itself, or for something else? In this case, it looks like May values playing the cello in service of something else. So the correct answer is 'no.' Read on to learn what type of value May assigns to playing the cello!"
+            q2feedback.innerHTML = "Incorrect. Think about it: does May value playing the cello for itself, or for something else? In this case, it looks like May values playing the cello in service of something else. So the correct answer is no. Read on to learn what type of value May assigns to playing the cello!"
             break;
         case "Learning Objective 1, Question 2: Correct (B)":
             q2feedback.innerHTML = "Correct! You may be wondering in what way May values playing the cello. Read on to find out."
